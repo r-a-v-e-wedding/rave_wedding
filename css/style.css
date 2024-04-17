@@ -1,0 +1,114 @@
+@font-face {
+    font-family: 'NotCourier';
+    src: url(../fonts/NotCourierSans.woff);
+    font-weight: normal;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'SelectMono';
+    src: url(../fonts/SelectMono-Italic.woff);
+    font-weight: normal;
+    font-style: normal;
+  }
+
+html {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #E5DAC6;
+    color: #000000;
+    box-sizing: border-box;
+    font-family: 'NotCourier';
+    font-style: normal;
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+}
+nav{
+  display: flex;
+  top:0;
+  position: sticky;
+  flex-flow: row wrap;
+  padding:0;
+  margin:0;
+  z-index: 999;
+  overflow: hidden;
+}
+.row{
+  display: flex;
+  position: relative;
+  width: 100vw;
+}
+.row > * {
+  flex: 1 100%;
+}
+a{
+  display: flex;
+  justify-content: center;
+  align-content: center;;
+  padding: 1%;
+  background: #E5DAC6;
+  border: 8px outset #e9dfce;
+}
+a:active{
+  background: #aca394;
+  border: 8px inset #E5DAC6;
+  mix-blend-mode: darken;
+}
+a img:active{
+  mix-blend-mode: darken;
+}
+.content{ 
+  position: relative;
+  top: 50%;
+  padding-top: 1vh;
+  z-index: -1;
+}
+section{
+  text-align: center;
+  align-items: center;
+}
+a img{
+  position: relative;
+  height: 5vw;
+}
+.icon{
+  position: relative;
+  margin-top: 5%;
+  width: 40%;
+  padding: 5px;
+}
+.section-content{
+  text-align: center;
+  background: #ffffff;
+  border: #000000 1px solid;
+  width: 80%;
+  margin-right: 10%;
+  margin-left: 10%;
+  /* margin-top: 3%; */
+}
+h1{
+  font-family: 'SelectMono'; 
+  font-size: 20px;
+  font-weight: normal;
+  padding: 0;
+ }
+ p{
+  text-align: center;
+  font-family: 'NotCourier';   
+  font-size: 16px;
+  padding-right: 5%;
+  padding-left: 5%;
+  padding-bottom: 3%;
+ }
+span img{
+  width: 100vw;
+}
+#schedule, #location, #lodging, #faq, #gift, #outreach, #rsvp{
+  scroll-margin-top: 100px;
+  scroll-behavior: smooth;
+}
