@@ -20,7 +20,6 @@
   font-display: swap;
 }
 
-
 html {
   width: 100%;
   height: 100%;
@@ -37,6 +36,7 @@ body {
   padding: 0;
   margin: 0;
   overflow-x: hidden;
+  z-index: -1;
 }
 
 /* GENERAL */
@@ -80,14 +80,14 @@ nav.desktop {
   display: flex;
   position: fixed;
   height: 100vh;
-  z-index: 999;
+  z-index: 99;
 }
 
 .row {
-  top: 0;
   display: flex;
   position: relative;
   flex-direction: column;
+  top: 0;
   width: 200px;
 }
 
@@ -95,26 +95,12 @@ nav.desktop {
   flex: 1 100%;
 }
 
-.content {
-  position: relative;
-  margin-left: 200px;
-  z-index: -1;
+#lang{
+  position: fixed;
+  right: 0;
+  z-index: 99;
+  height: calc(100%/8);
 }
-
-section {
-  margin: 0;
-  padding: 0;
-  text-align: center;
-  align-items: center;
-}
-
-section#intro{
-  padding-top: 5%;
-}
-#letter p{
-  font-family: 'Biro';
-}
-
 
 a img {
   justify-content: center;
@@ -122,9 +108,7 @@ a img {
   height: 75px;
 }
 
-a img[alt*="RSVP"]{
-  justify-content: center;
-  align-self: center;
+a img[alt*="RSVP"], a img[alt*="language"]{
   height: 50px;
 }
 
@@ -133,6 +117,27 @@ a img[alt*="RSVP"]{
   margin-top: 5%;
   width: 15vmax;
   padding: 5px;
+}
+
+.content {
+  position: relative;
+  margin-left: 200px;
+  z-index: 97;
+}
+
+.content.desktop{
+  display: block;
+} 
+
+.content.mobile{
+  display: none;
+}
+
+section {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  align-items: center;
 }
 
 .section-content {
@@ -150,11 +155,47 @@ a img[alt*="RSVP"]{
   bottom: 0;
   right:0;
   width: 100vmax;
-  z-index: 10;
+  z-index: 98;
 }
 
 .spacer.mobile {
   display: none;
+}
+
+section#intro{
+  position: relative;
+  text-align: center;
+  height: 80vh;
+  transform: rotate(-1deg);
+}
+
+.letter{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding-top: 17vh;
+}
+
+.letter p{
+  position: relative;
+  text-align: center;
+  font-family: 'Biro';
+  font-size: 24px;
+  z-index: 99;
+}
+
+.letter img{
+  display: block;
+  position: absolute;
+  top: 10vh;
+  left: 0; 
+  right: 0; 
+  margin-left: auto; 
+  margin-right: auto; 
+  z-index: 96;
+
+  width: 550px;
 }
 
 #schedule {
@@ -168,7 +209,7 @@ a img[alt*="RSVP"]{
 /* MOBILE */
 @media screen and (max-width: 1000px),
 screen and (max-height: 800px) {
-  nav.desktop {
+  nav.desktop, a.desktop {
     display: none;
   }
 
@@ -179,7 +220,7 @@ screen and (max-height: 800px) {
     flex-flow: row wrap;
     padding: 0;
     margin: 0;
-    z-index: 999;
+    z-index: 100;
     overflow: hidden;
   }
 
@@ -197,9 +238,15 @@ screen and (max-height: 800px) {
   .content {
     position: relative;
     top: 50%;
-    /* padding-top: 1vh; */
     margin: 0;
-    z-index: -1;
+  }
+
+  .content.mobile{
+  display:block;
+}
+
+  .content.desktop{
+    display:none;
   }
 
   section {
@@ -209,7 +256,7 @@ screen and (max-height: 800px) {
     align-items: center;
   }
 
-  a img, a img[alt*="RSVP"] {
+  a img, a img[alt*="RSVP"], a img[alt*="language"]{
     position: relative;
     height: 5vw;
   }
@@ -228,7 +275,6 @@ screen and (max-height: 800px) {
     width: 80%;
     margin-right: 10%;
     margin-left: 10%;
-    /* margin-top: 3%; */
   }
 
   h1 {
@@ -248,9 +294,10 @@ screen and (max-height: 800px) {
   }
 
   .spacer.mobile {
+    position: relative;
     display: inline;
     width: 100vw;
-    z-index: 10;
+    z-index: 99;
   }
 
   .spacer.desktop {
