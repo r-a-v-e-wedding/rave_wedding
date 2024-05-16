@@ -19,22 +19,21 @@
   font-style: normal;
   font-display: swap;
 }
-
 html {
   width: 100%;
   height: 100%;
-  margin: 0;
-  padding: 0;
+  margin:0;
+  padding:0;
 }
 
 body {
+  margin:0;
+  padding:0;
   background: #E5DAC6;
   color: #000000;
   box-sizing: border-box;
   font-family: 'NotCourier';
   font-style: normal;
-  padding: 0;
-  margin: 0;
   overflow-x: hidden;
   z-index: -1;
 }
@@ -60,6 +59,16 @@ h1 {
   font-size: 20px;
   font-weight: normal;
   padding: 0;
+  margin-top: 5%;
+}
+
+h2, .h2 {
+  display: inline;
+  font-family: 'NotCourier';
+  font-size: 16px;
+  font-weight: bold;
+  text-align: left;
+  text-transform: uppercase;
 }
 
 p {
@@ -68,7 +77,22 @@ p {
   font-size: 16px;
   padding-right: 5%;
   padding-left: 5%;
-  padding-bottom: 3%;
+}
+
+p.question{
+  text-transform: uppercase;
+}
+
+ul{
+  font-family: 'NotCourier';
+  font-size: 16px;
+  padding-right: 5%;
+  padding-left: 5%;
+  text-align: left;
+}
+
+li{
+  margin-left:10px;
 }
 
 /* DESKTOP */
@@ -134,14 +158,16 @@ a img[alt*="RSVP"], a img[alt*="language"]{
 }
 
 section {
-  margin: 0;
-  padding: 0;
   text-align: center;
   align-items: center;
 }
 
+h2 {
+  display: flex;
+  padding-left: 5%;
+}
+
 .section-content {
-  text-align: center;
   background: #ffffff;
   border: #000000 1px solid;
   width: 80%;
@@ -150,10 +176,16 @@ section {
   /* margin-top: 3%; */
 }
 
+.section-content img{
+  width: 80%;
+  border: 1px #000000 solid;
+}
+
 .spacer.desktop {
   position: fixed;
   bottom: 0;
   right:0;
+  display: inline;
   width: 100vmax;
   z-index: 98;
 }
@@ -167,6 +199,10 @@ section#intro{
   text-align: center;
   height: 80vh;
   transform: rotate(-1deg);
+}
+
+section#location p{
+  text-align: left;
 }
 
 .letter{
@@ -194,8 +230,73 @@ section#intro{
   margin-left: auto; 
   margin-right: auto; 
   z-index: 96;
-
   width: 550px;
+}
+
+.link{
+  display: inline;
+  padding: initial;
+  background: initial;
+  border: initial;
+}
+
+.link:active{
+  background: none;
+  border: none;
+  mix-blend-mode: none;
+  font-style: italic;
+  padding: 0;
+}
+
+.link.external{
+  color: #1100ff;
+}
+
+.link.internal{
+  color: #000000;
+  text-decoration: dashed underline #000000;
+}
+
+.section-table{
+  display: flex;
+  justify-content: center;
+}
+
+table{
+  width: 85%;
+  margin-bottom: 5%;
+}
+
+table, th{
+  border: 1px #000000 solid;
+  border-collapse: collapse;
+}
+
+th{
+  font-weight: lighter;
+  padding: 5px 10px 5px 10px;
+}
+
+thead tr{
+  text-align: right;
+}
+
+thead th{
+  font-weight: bolder;
+}
+
+th:nth-child(1){
+  width: 5%;
+}
+
+th:nth-child(2){
+  text-align: left;
+}
+
+.table-time{
+  font-family: 'SelectMono';
+  font-weight: lighter;
+  font-size: 14px;
 }
 
 #schedule {
@@ -206,9 +307,29 @@ section#intro{
   background: #b8e4cb;
 }
 
+#lodging{
+  background: #F0C7C7;
+}
+
+#faq{
+  background: #D6D6D6;
+}
+
+#gift{
+  background: #EFE9A8;
+}
+
+#outreach{
+  background: #CADBF9;
+}
+
+#rsvp{
+  background: #F2D5EB;
+}
+
 /* MOBILE */
 @media screen and (max-width: 1000px),
-screen and (max-height: 800px) {
+screen and (max-width: 1000px) and (max-height: 700px) {
   nav.desktop, a.desktop {
     display: none;
   }
@@ -282,6 +403,7 @@ screen and (max-height: 800px) {
     font-size: 20px;
     font-weight: normal;
     padding: 0;
+    margin-top: 25px;
   }
 
   p {
@@ -295,8 +417,7 @@ screen and (max-height: 800px) {
 
   .spacer.mobile {
     position: relative;
-    display: inline;
-    width: 100vw;
+    display: block;
     z-index: 99;
   }
 
@@ -313,13 +434,5 @@ screen and (max-height: 800px) {
   #rsvp {
     scroll-margin-top: 100px;
     scroll-behavior: smooth;
-  }
-
-  #schedule {
-    background: #c4c4e7;
-  }
-
-  #location {
-    background: #b8e4cb;
   }
 }
