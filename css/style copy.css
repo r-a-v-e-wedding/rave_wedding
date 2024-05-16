@@ -169,7 +169,7 @@ h2 {
 
 .section-content {
   background: #ffffff;
-  border: none;
+  border: #000000 1px solid;
   width: 80%;
   margin-right: 10%;
   margin-left: 10%;
@@ -303,54 +303,33 @@ th:nth-child(2){
   font-size: 14px;
 }
 
-#schedule,
-#location,
-#lodging,
-#faq,
-#gift,
-#outreach,
-#rsvp,
-#footer {
-  display: none;
+#schedule {
+  background: #c4c4e7;
 }
 
-.section-sign{
-  display: block;
-  background: #ffffff;
-  border: 1px #000000 solid;
-  padding: 0;
-  padding-bottom: 5%;
-  margin-right: 15%;
-  margin-right: 15%;
-  z-index: 98;
+#location {
+  background: #b8e4cb;
 }
 
-#schedule-sign{
-  border-radius: 200px 200px 0 0;
+#lodging{
+  background: #F0C7C7;
 }
 
-#location-sign{
-  border-radius: 10px 10px 0 0;
+#faq{
+  background: #D6D6D6;
 }
 
+#gift{
+  background: #EFE9A8;
+}
 
+#outreach{
+  background: #CADBF9;
+}
 
-/* #location-sign {
-  width: auto;
-  height: auto;
-  position: relative;
-  clip-path: polygon(
-    0 10%,
-    10% 0,
-    90% 0,
-    100% 10%,
-    100% 0%,
-    100% 100%,
-    0% 100%,
-    0% 0%,
-    0% 0%
-  );
-} */
+#rsvp{
+  background: #F2D5EB;
+}
 
 /* MOBILE */
 @media screen and (max-width: 1000px),
@@ -365,6 +344,7 @@ screen and (max-width: 1000px) and (max-height: 700px) {
     position: sticky;
     flex-flow: row wrap;
     padding: 0;
+    margin: 0;
     z-index: 100;
     overflow: hidden;
   }
@@ -395,7 +375,6 @@ screen and (max-width: 1000px) and (max-height: 700px) {
   }
 
   section {
-    background-size: 100vw;
     margin: 0;
     padding: 0;
     text-align: center;
@@ -456,45 +435,8 @@ screen and (max-width: 1000px) and (max-height: 700px) {
   #faq,
   #gift,
   #outreach,
-  #rsvp,
-  #footer {
-    display: block;
+  #rsvp {
     scroll-margin-top: 100px;
     scroll-behavior: smooth;
   }
-
-  #schedule {
-    background: #c4c4e7;
-  }
-  
-  #location {
-    background: #b8e4cb;
-  }
-  
-  #lodging{
-    background: #F0C7C7;
-  }
-  
-  #faq{
-    background: #D6D6D6;
-  }
-  
-  #gift{
-    background: #EFE9A8;
-  }
-  
-  #outreach{
-    background: #CADBF9;
-  }
-  
-  #rsvp{
-    background: #F2D5EB;
-  }
-
-  .section-sign{
-    width: 100vw;
-    display: none;
-    all: inherit;
-  }
-  
 }

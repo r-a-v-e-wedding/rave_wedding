@@ -9,23 +9,24 @@
     <meta property="og:title" content="r.a.v.e" />
     <meta property="og:description" content="r.a.v.e wedding website" />
     <meta property="og:url" content="****" />
+    <script src="https://code.jquery.com/jquery-3.7.1.js"
+    integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+
     <link rel="stylesheet" href="css/style.css" />
     <script src="js/script.js"></script>
-    <script src="https://code.jquery.com/jquery-3.7.1.js"
-        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <nav class="desktop">
         <div class="row">
-            <a href="#intro"><img src="assets/menu/08_menu.png" alt="intro"></a>
-            <a href="#schedule"><img src="assets/menu/01_menu.png" alt="schedule"></a>
-            <a href="#location"><img src="assets/menu/02_menu.png" alt="location"></a>
-            <a href="#lodging"><img src="assets/menu/03_menu.png" alt="lodging"></a>
-            <a href="#faq"><img src="assets/menu/04_menu.png" alt="FAQ"></a>
-            <a href="#gift"><img src="assets/menu/05_menu.png" alt="gift registry"></a>
-            <a href="#outreach"><img src="assets/menu/06_menu.png" alt="outreach"></a>
-            <a href="#rsvp"><img src="assets/menu/07_menu.png" alt="RSVP"></a>
+            <a href="index.html"><img src="assets/menu/08_menu.png" alt="intro"></a>
+            <a href="schedule.html"><img src="assets/menu/01_menu.png" alt="schedule"></a>
+            <a href="location.html"><img src="assets/menu/02_menu.png" alt="location"></a>
+            <a href="lodging.html"><img src="assets/menu/03_menu.png" alt="lodging"></a>
+            <a href="faq.html"><img src="assets/menu/04_menu.png" alt="FAQ"></a>
+            <a href="gift.html"><img src="assets/menu/05_menu.png" alt="gift registry"></a>
+            <a href="outreach.html"><img src="assets/menu/06_menu.png" alt="outreach"></a>
+            <a href="rsvp.html"><img src="assets/menu/07_menu.png" alt="RSVP"></a>
         </div>
     </nav>
     <div class="row" id="lang">
@@ -66,6 +67,7 @@
         </section>
         <img class="spacer mobile" src="assets/spacer_01.png" alt="grass seperator">
         <section id="schedule">
+            <div class="section-sign" id="schedule-sign">
             <img class="icon" src="assets/full/01_full.png" alt="">
             <div class="section-content">
                 <h1>SCHEDULE</h1>
@@ -145,9 +147,11 @@
                     </table>
                 </div>
             </div>
+        </div>
         </section>
         <img class="spacer mobile" src="assets/spacer_02.png" alt="grass seperator">
         <section id="location">
+            <div class="section-sign" id="location-sign">
             <img class="icon" src="assets/full/02_full.png" alt="">
             <div class="section-content">
                 <h1>LOCATION</h1>
@@ -160,10 +164,11 @@
                 <img src="assets/map-placeholder.png" alt="map to Saint-Adolphe-d’Howard">
                 <br><br>
                 <p><b class="h2">CARPOOLING :</b> Whether you’re renting a car from the airport, or driving from Montréal,
-                    ridesharing can be coordinated on our <em>Discord Server</em> (in the <a class="link internal"
+                    ridesharing can be coordinated on our <em>Discord Server</em> (in the <a class="link ref"
                         href="#outreach">Outreach</a> section) via this <a class="link external"href="#">Google
                         Sheet</a>. Don’t worry if you don’t have access to a car, you’ll definitely be able to make it!</p>
             </div>
+        </div>
         </section>
         <img class="spacer mobile" src="assets/spacer_03.png" alt="grass seperator">
         <section id="lodging">
@@ -230,7 +235,7 @@
             <div class="section-content">
                 <h1>GIFT REGISTRY</h1>
                 <p>Your presence and enthusiastic participation at our wedding is the greatest gift we could ask for. However, if you wish to contribute to our new journey together, we've curated a selection of items that would help us start our life together.</p>
-                <a class="link external" href="#" target="_blank"></a>
+                <p><a class="link external" href="#" target="_blank">You can access the gift registry here.</a></p>
             </div>
         </section>
         <img class="spacer mobile" src="assets/spacer_06.png" alt="grass seperator">
@@ -238,10 +243,9 @@
             <img class="icon" src="assets/full/06_full.png" alt="">
             <div class="section-content">
                 <h1>OUTREACH</h1>
-                <p>For any questions or queries, you can email us at <a class="link external" href="mailto:nic.emm.amour@gmail.com">nic.emm.amour@gmail.com</a></p>
+                <p>For any questions or queries, you can email us at <a class="link ref" href="mailto:nic.emm.amour@gmail.com">nic.emm.amour@gmail.com</a></p>
                 <p>All coordination before the wedding - rideshares, art installations, workshops, volunteering - will take place on Discord, a group messaging platform with different Channels based on topic.</p>
-                <a class="link external" href="#">Click here to join</a>
-                <p>Invitations will be sent out upon filling out the RSVP.</p>
+                <p><a class="link external" href="#">Click here to join</a><br>(Invitations will be sent out upon filling out the RSVP)</p>
             </div>
         </section>
         <img class="spacer mobile" src="assets/spacer_07.png" alt="grass seperator">
@@ -249,16 +253,14 @@
             <img class="icon" src="assets/full/07_full.png" alt="">
             <div class="section-content">
                 <h1>RSVP</h1>
-                <a class="link external" href="#">Click here to RSVP!</a>
-                <p>Please do so before July 30th.</p>
+                <p><a class="link external" href="#">Click here to RSVP!</a><br><br>Please do so before July 30th.</p>
             </div>
         </section>
         <img class="spacer mobile" src="assets/spacer_08.png" alt="grass seperator">
         <section id="footer">
             <br><br>
-                <p>We’re excited to see you! &lt;3 Nic & Emma</p>
-                <br>
-                <p>website made by <a href="">sam bordeleau</a></p>
+                <p>We’re excited to see you!<br>♡<br>Nic & Emma</p>
+                <p class="credit">website made by <a class="link ref" href="https://lobotomi-e.net/" target="_blank">sam bordeleau</a></p>
         </section>
     </div>
 
