@@ -24,6 +24,8 @@ html {
   height: 100%;
   margin:0;
   padding:0;
+
+  scrollbar-color: #aca394 #E5DAC6;
 }
 
 body {
@@ -36,6 +38,8 @@ body {
   font-style: normal;
   overflow-x: hidden;
   z-index: -1;
+
+  scrollbar-width: none;
 }
 
 /* GENERAL */
@@ -143,12 +147,36 @@ a img[alt*="RSVP"], a img[alt*="language"]{
   padding: 5px;
 }
 
+#rsvp .icon{
+  margin-top: 10%;
+}
+
 .content-fixed {
   position: relative;
   margin-left: 200px;
   z-index: 97;
 }
 
+.sign{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50vw;
+  padding: 0 0 5% 0;
+  z-index: 98;
+
+  background: #ffffff;
+  border: 1px #000000 solid;
+}
+
+#schedule-sign{
+  border-radius: 200px 200px 0 0;
+}
+
+#location-sign{
+  border-radius: 10px 10px 0 0;
+}
 
 section {
   position: absolute;
@@ -161,6 +189,10 @@ section {
   align-items: center;
 }
 
+.section-desktop{
+  display: flex;
+}
+
 h2 {
   display: flex;
   padding-left: 5%;
@@ -170,8 +202,26 @@ h2 {
   background: #ffffff;
   border: none;
   width: 80%;
-  margin-right: 10%;
-  margin-left: 10%;
+  height: 40vh;
+  padding-bottom: 3vh;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.section-content.small {
+  height: 10vh;
+}
+.para{
+  border: #000000 1px solid;
+  position: relative;
+  overflow-y: scroll;
+  height: inherit;
+
+  /*** scrollbar ***/
+  -ms-overflow-style: none; /* could remove ? */
+  overflow: -moz-scrollbars-none; /* could remove ? */
+  scrollbar-width: none;
+  scrollbar-color: #ffffff #ffffff;
 }
 
 .section-content img{
@@ -193,42 +243,22 @@ h2 {
 }
 
 section#intro{
+  display: flex;
+  align-content: center;
+  justify-content: center;
   position: relative;
-  text-align: center;
-  height: 80vh;
-  /* transform: rotate(-1deg); */
 }
 
 section#location p{
   text-align: left;
 }
 
-.letter{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  padding-top: 17vh;
-}
-
-.letter p{
-  position: relative;
-  text-align: center;
-  font-family: 'Biro';
-  font-size: 24px;
-  z-index: 99;
-}
-
-.letter img{
-  display: block;
-  position: absolute;
-  top: 10vh;
-  left: 0; 
-  right: 0; 
-  margin-left: auto; 
-  margin-right: auto; 
+.letter {
   z-index: 96;
-  width: 550px;
+}
+
+.script-letter{
+  display: none;
 }
 
 .link{
@@ -301,23 +331,36 @@ th:nth-child(2){
   font-size: 14px;
 }
 
-.section-sign{
-  background: #ffffff;
-  border: 1px #000000 solid;
-  padding: 0;
-  padding-bottom: 5%;
-  margin-right: 15%;
-  margin-left: 15%;
-  margin-bottom: 0;
-  z-index: 98;
+#intro {
+  background: #E5DAC6;
 }
 
-#schedule-sign{
-  border-radius: 200px 200px 0 0;
+#schedule {
+  background: #c4c4e7;
 }
 
-#location-sign{
-  border-radius: 10px 10px 0 0;
+#location {
+  background: #b8e4cb;
+}
+
+#lodging{
+  background: #F0C7C7;
+}
+
+#faq{
+  background: #D6D6D6;
+}
+
+#gift{
+  background: #EFE9A8;
+}
+
+#outreach{
+  background: #CADBF9;
+}
+
+#rsvp{
+  background: #F2D5EB;
 }
 
 /* #location-sign {
@@ -343,8 +386,8 @@ th:nth-child(2){
 
 
 /* MOBILE */
-@media screen and (max-width: 1000px),
-screen and (max-width: 1000px) and (max-height: 700px) {
+@media screen and (max-width: 1100px),
+screen and (max-width: 1100px) and (max-height: 700px) {
   nav.desktop, a.desktop {
     display: none;
   }
@@ -386,6 +429,13 @@ screen and (max-width: 1000px) and (max-height: 700px) {
     padding: 0;
   }
 
+  .para{
+    position: relative;
+    overflow: visible;
+    height: inherit;
+    border: none;
+  }
+
   a img, a img[alt*="RSVP"], a img[alt*="language"]{
     position: relative;
     height: 5vw;
@@ -403,8 +453,27 @@ screen and (max-width: 1000px) and (max-height: 700px) {
     background: #ffffff;
     border: #000000 1px solid;
     width: 80%;
+    height: auto;
+    padding-bottom: 5px;
     margin-right: 10%;
     margin-left: 10%;
+  }
+
+  .section-content.small {
+    height: inherit;
+  }
+
+  .sign{
+    width: 100vw;
+    display: none;
+    all: inherit;
+  }
+
+  #rsvp-sign{
+    all: inherit;
+  }
+  .sign.small{
+    margin: inherit;
   }
 
   h1 {
@@ -445,45 +514,30 @@ screen and (max-width: 1000px) and (max-height: 700px) {
     display: block;
     scroll-margin-top: 100px;
     scroll-behavior: smooth;
-  }
+  }  
+}
 
-  .section-sign{
-    width: 100vw;
-    display: none;
-    all: inherit;
-  }
-
+/* MOBILE-LETTER */
+@media screen and (max-width: 600px){
   #intro {
-    background: #E5DAC6;
+    background-image: url(../assets/letter-bg.jpg);
   }
-  
-  #schedule {
-    background: #c4c4e7;
+  .letter{
+    display: none;
   }
-  
-  #location {
-    background: #b8e4cb;
+  .script-letter{
+    display: block;
   }
-  
-  #lodging{
-    background: #F0C7C7;
+
+  .script-letter p{
+    text-align: center;
+    font-family: 'Biro';
+    font-size: 24px;
   }
-  
-  #faq{
-    background: #D6D6D6;
+
+ img.spacer.mobile:first-of-type{
+    background-color: #f9fafb;
   }
-  
-  #gift{
-    background: #EFE9A8;
-  }
-  
-  #outreach{
-    background: #CADBF9;
-  }
-  
-  #rsvp{
-    background: #F2D5EB;
-  }
-  
-  
+
+ 
 }
