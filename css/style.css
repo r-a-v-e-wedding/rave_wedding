@@ -143,21 +143,20 @@ a img[alt*="RSVP"], a img[alt*="language"]{
   padding: 5px;
 }
 
-.content {
+.content-fixed {
   position: relative;
   margin-left: 200px;
   z-index: 97;
 }
 
-.content.desktop{
-  display: block;
-} 
-
-.content.mobile{
-  display: none;
-}
 
 section {
+  position: absolute;
+  height: 100vh;
+  overflow-x: hidden;
+  top:0;
+  right:0;
+  width: calc(100vw - 200px);
   text-align: center;
   align-items: center;
 }
@@ -173,7 +172,6 @@ h2 {
   width: 80%;
   margin-right: 10%;
   margin-left: 10%;
-  /* margin-top: 3%; */
 }
 
 .section-content img{
@@ -198,7 +196,7 @@ section#intro{
   position: relative;
   text-align: center;
   height: 80vh;
-  transform: rotate(-1deg);
+  /* transform: rotate(-1deg); */
 }
 
 section#location p{
@@ -303,25 +301,14 @@ th:nth-child(2){
   font-size: 14px;
 }
 
-#schedule,
-#location,
-#lodging,
-#faq,
-#gift,
-#outreach,
-#rsvp,
-#footer {
-  display: none;
-}
-
 .section-sign{
-  display: block;
   background: #ffffff;
   border: 1px #000000 solid;
   padding: 0;
   padding-bottom: 5%;
   margin-right: 15%;
-  margin-right: 15%;
+  margin-left: 15%;
+  margin-bottom: 0;
   z-index: 98;
 }
 
@@ -332,8 +319,6 @@ th:nth-child(2){
 #location-sign{
   border-radius: 10px 10px 0 0;
 }
-
-
 
 /* #location-sign {
   width: auto;
@@ -351,6 +336,11 @@ th:nth-child(2){
     0% 0%
   );
 } */
+
+#footer {
+  display: none;
+}
+
 
 /* MOBILE */
 @media screen and (max-width: 1000px),
@@ -380,26 +370,20 @@ screen and (max-width: 1000px) and (max-height: 700px) {
     flex: 1 100%;
   }
 
-  .content {
+  .content-scroll {
     position: relative;
     top: 50%;
     margin: 0;
   }
 
-  .content.mobile{
-  display:block;
-}
-
-  .content.desktop{
-    display:none;
-  }
-
   section {
-    background-size: 100vw;
+    position: relative;
+    width: 100vw;
+    height:inherit;
+    overflow-x: inherit;
+    position: inherit;
     margin: 0;
     padding: 0;
-    text-align: center;
-    align-items: center;
   }
 
   a img, a img[alt*="RSVP"], a img[alt*="language"]{
@@ -463,6 +447,16 @@ screen and (max-width: 1000px) and (max-height: 700px) {
     scroll-behavior: smooth;
   }
 
+  .section-sign{
+    width: 100vw;
+    display: none;
+    all: inherit;
+  }
+
+  #intro {
+    background: #E5DAC6;
+  }
+  
   #schedule {
     background: #c4c4e7;
   }
@@ -490,11 +484,6 @@ screen and (max-width: 1000px) and (max-height: 700px) {
   #rsvp{
     background: #F2D5EB;
   }
-
-  .section-sign{
-    width: 100vw;
-    display: none;
-    all: inherit;
-  }
+  
   
 }
