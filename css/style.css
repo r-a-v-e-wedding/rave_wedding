@@ -25,6 +25,7 @@ html {
   margin:0;
   padding:0;
 
+  font-size: 100%;
   scrollbar-color: #aca394 #E5DAC6;
 }
 
@@ -42,7 +43,6 @@ body {
   scrollbar-width: none;
 }
 
-/* GENERAL */
 a {
   display: flex;
   justify-content: center;
@@ -60,25 +60,16 @@ a:active {
 
 h1 {
   font-family: 'SelectMono';
-  font-size: 20px;
+  font-size: calc(1rem + 0.6vw); /* ~16px */
   font-weight: normal;
   padding: 0;
-  margin-top: 5%;
-}
-
-h2, .h2 {
-  display: inline;
-  font-family: 'NotCourier';
-  font-size: 16px;
-  font-weight: bold;
-  text-align: left;
-  text-transform: uppercase;
+  margin-top: 1vh;
 }
 
 p {
   text-align: center;
   font-family: 'NotCourier';
-  font-size: 16px;
+  font-size: calc(1rem + 0.1vw); /* ~16px */
   padding-right: 5%;
   padding-left: 5%;
 }
@@ -89,7 +80,7 @@ p.question{
 
 ul{
   font-family: 'NotCourier';
-  font-size: 16px;
+  font-size: calc(1rem + 0.1vw); /* ~16px */
   padding-right: 5%;
   padding-left: 5%;
   text-align: left;
@@ -142,13 +133,9 @@ a img[alt*="RSVP"], a img[alt*="language"]{
 
 .icon {
   position: relative;
-  margin-top: 5%;
-  width: 15vmax;
+  margin-top: 2vh;
+  width: calc(150px + 5vw);
   padding: 5px;
-}
-
-#rsvp .icon{
-  margin-top: 10%;
 }
 
 .content-fixed {
@@ -194,16 +181,21 @@ section {
 }
 
 h2 {
-  display: flex;
   padding-left: 5%;
+  padding-top: 2vh;
+  font-family: 'NotCourier';
+  font-size: calc(1rem + 0.1vw); /* ~16px */
+  font-weight: bold;
+  text-align: left;
+  text-transform: uppercase;
 }
 
 .section-content {
   background: #ffffff;
   border: none;
-  width: 80%;
+  width: 85%;
   height: 40vh;
-  padding-bottom: 3vh;
+  padding-bottom: 2vh;
   margin-right: auto;
   margin-left: auto;
 }
@@ -213,6 +205,7 @@ h2 {
 }
 .para{
   border: #000000 1px solid;
+  /* padding-top: 3vh; */
   position: relative;
   overflow-y: scroll;
   height: inherit;
@@ -222,6 +215,10 @@ h2 {
   overflow: -moz-scrollbars-none; /* could remove ? */
   scrollbar-width: none;
   scrollbar-color: #ffffff #ffffff;
+}
+
+.para img{
+  margin-top: 2.5vh;
 }
 
 .section-content img{
@@ -286,7 +283,7 @@ section#location p{
 }
 
 .credit{
-  font-size: 14px;
+  font-size: calc(0.875rem + 0.1vw); /* ~14px */
 }
 
 .section-table{
@@ -328,7 +325,7 @@ th:nth-child(2){
 .table-time{
   font-family: 'SelectMono';
   font-weight: lighter;
-  font-size: 14px;
+  font-size: calc(0.875rem + 0.1vw); /* ~14px */
 }
 
 #intro {
@@ -384,7 +381,6 @@ th:nth-child(2){
   display: none;
 }
 
-
 /* MOBILE */
 @media screen and (max-width: 1100px),
 screen and (max-width: 1100px) and (max-height: 700px) {
@@ -430,10 +426,15 @@ screen and (max-width: 1100px) and (max-height: 700px) {
   }
 
   .para{
+    padding: 0 5px 5px 5px;
     position: relative;
     overflow: visible;
     height: inherit;
     border: none;
+  }
+
+  .para img{
+    margin-top: inherit;
   }
 
   a img, a img[alt*="RSVP"], a img[alt*="language"]{
@@ -444,7 +445,7 @@ screen and (max-width: 1100px) and (max-height: 700px) {
   .icon {
     position: relative;
     margin-top: 5%;
-    width: 40%;
+      width: calc(150px + 15vw);
     padding: 5px;
   }
 
@@ -477,20 +478,17 @@ screen and (max-width: 1100px) and (max-height: 700px) {
   }
 
   h1 {
-    font-family: 'SelectMono';
-    font-size: 20px;
-    font-weight: normal;
-    padding: 0;
-    margin-top: 25px;
+    font-size: calc(1.25rem + 0.3vw); /* ~20px */
+    margin-top: calc(10px + 1.5vw);
+  
   }
 
+  h2 {
+    padding-top: 2vh;
+    font-size: calc(1.125rem + 0.1vw); /* ~18px */
+  }
   p {
-    text-align: center;
-    font-family: 'NotCourier';
-    font-size: 16px;
-    padding-right: 5%;
-    padding-left: 5%;
-    padding-bottom: 3%;
+    font-size: calc(1rem + 0.1vw); /* ~16px */
   }
 
   .spacer.mobile {
@@ -532,7 +530,7 @@ screen and (max-width: 1100px) and (max-height: 700px) {
   .script-letter p{
     text-align: center;
     font-family: 'Biro';
-    font-size: 24px;
+    font-size: calc(1.5rem + 0.1vw); /* ~24px */
   }
 
  img.spacer.mobile:first-of-type{

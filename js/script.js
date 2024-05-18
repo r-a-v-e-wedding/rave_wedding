@@ -24,7 +24,7 @@ $(document).ready(function(){
 
     //make buttons turn dark 
     // $("nav > a").on( "click", function() {
-    //   $(this > "img").css("opacity ")
+    //   $(this > "img").css("opacity ") 
     // });
 
     $( ".menu" ).on( "click", function() {
