@@ -18,14 +18,21 @@ $(document).ready(function(){
         section.attr("class", "section-desktop")
         $(section).css("display", "none");
         $("#intro").css("display", "block");
+        $("#cabin-img").css("display", "block");
         $(".letter").attr("src", "assets/letter.png")
       }
     }
 
-    //make buttons turn dark 
-    // $("nav > a").on( "click", function() {
-    //   $(this > "img").css("opacity ") 
-    // });
+    $(".row > a").on( "mousedown mouseup", function(btnChange) {
+      let imgSRC = $(this).find("img").attr("src");
+      imgnewSRC = imgSRC.replace(".png", "")
+      if (btnChange.type === 'mousedown') {
+        $(this).find("img").css({"filter": "brightness(0%) sepia(100%) blur(0.3px)", "mix-blend-mode": "overlay", "opacity": "40%"}) 
+      }
+      else {
+        $(this).find("img").css({"filter": "none", "mix-blend-mode": "normal", "opacity": "100%"}) 
+      }
+    });
 
     $( ".menu" ).on( "click", function() {
       let button = $(this).attr("id");
