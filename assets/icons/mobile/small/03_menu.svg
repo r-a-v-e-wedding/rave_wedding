@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 43.55 21.73">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #f0b3ca;
+        stroke-width: 0px;
+      }
+
+      .cls-2 {
+        isolation: isolate;
+      }
+    </style>
+  </defs>
+  <g id="ICONS" class="cls-2">
+    <g id="cabins">
+      <polygon id="roof" class="cls-1" points="0 7.7 43.55 7.7 21.77 0 0 7.7"/>
+      <path class="cls-1" d="M35.49,21.73H7.78v-13.5h27.71v13.5ZM16.19,9.42h-6.93v4h6.93v-4ZM34.01,9.42h-6.93v4h6.93v-4ZM25.78,10.56h-8.29v11.17h8.29v-11.17Z"/>
+      <path class="cls-1" d="M25.3,21.73h-7.33v-10.69h7.33v10.69ZM24.14,16.05c-.39,0-.7.27-.7.61s.31.61.7.61.7-.27.7-.61-.31-.61-.7-.61Z"/>
+      <g id="windows">
+        <rect class="cls-1" x="9.72" y="9.8" width="2.77" height="1.44"/>
+        <rect class="cls-1" x="12.96" y="9.8" width="2.77" height="1.44"/>
+        <rect class="cls-1" x="9.72" y="11.6" width="2.77" height="1.44"/>
+        <rect class="cls-1" x="12.96" y="11.6" width="2.77" height="1.44"/>
+        <rect class="cls-1" x="27.54" y="9.8" width="2.77" height="1.44"/>
+        <rect class="cls-1" x="30.78" y="9.8" width="2.77" height="1.44"/>
+        <rect class="cls-1" x="27.54" y="11.6" width="2.77" height="1.44"/>
+        <rect class="cls-1" x="30.78" y="11.6" width="2.77" height="1.44"/>
+      </g>
+      <ellipse class="cls-1" cx="24.14" cy="16.66" rx=".43" ry=".37"/>
+    </g>
+  </g>
+</svg>

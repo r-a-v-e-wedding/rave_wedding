@@ -91,7 +91,7 @@ li{
 }
 
 /* DESKTOP */
-nav.mobile {
+nav.mobile.large, nav.mobile.small {
   display: none;
 }
 
@@ -482,14 +482,22 @@ th:nth-child(2){
 /* MOBILE */
 @media screen and (max-width: 1100px),
 screen and (max-width: 1100px) and (max-height: 700px) {
-  nav.desktop, a.desktop {
+  nav.desktop, nav.mobile.small, a.desktop {
     display: none;
   }
 
-  nav.mobile {
+  nav.mobile{
+    top:0;
+    position: -webkit-sticky;
+    position: -moz-sticky;
+    position: -ms-sticky;
+    position: -o-sticky;
+    position: sticky;
+  }
+
+  nav.mobile.large {
     display: flex;
     top: 0;
-    position: sticky;
     flex-flow: row wrap;
     padding: 0;
     z-index: 100;
@@ -497,8 +505,6 @@ screen and (max-width: 1100px) and (max-height: 700px) {
   }
 
   .row {
-    display: flex;
-    position: relative;
     flex-direction: row;
     width: 100vw;
   }
@@ -629,6 +635,29 @@ screen and (max-width: 1100px) and (max-height: 700px) {
 
 /* MOBILE-LETTER */
 @media screen and (max-width: 600px){
+  nav.desktop, nav.mobile.large{
+    display: none;
+  }
+
+  nav.mobile.small{
+    display: flex;
+    top: 0;
+    left:0;
+    position: -webkit-sticky;
+    position: -moz-sticky;
+    position: -ms-sticky;
+    position: -o-sticky;
+    position: sticky;
+    flex-flow: row wrap;
+    padding: 0;
+    z-index: 100;
+    /* overflow: hidden; */
+  }
+
+  nav img{
+    filter: drop-shadow(1 1 0.01rem #aca394);
+  }
+
   #intro {
     background-image: url(../assets/letter-bg.jpg);
   }
