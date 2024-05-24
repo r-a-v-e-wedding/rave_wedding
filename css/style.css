@@ -320,7 +320,7 @@ h2 {
   z-index: 98;
 }
 
-.spacer.mobile {
+.spacer.mobile-small, .spacer.mobile-smaller {
   display: none;
 }
 
@@ -492,13 +492,13 @@ th:nth-child(2) {
 /* MOBILE */
 @media screen and (max-width: 1100px),
 screen and (max-width: 1100px) and (max-height: 700px) {
-  html, body{
+  /* html, body{
     overflow-x: hidden;
   }
 
   body{
     position: relative;
-  }
+  } */
 
   nav.desktop,
   nav.mobile.small,
@@ -637,13 +637,13 @@ screen and (max-width: 1100px) and (max-height: 700px) {
     /* ~16px */
   }
 
-  .spacer.mobile {
+  .spacer.mobile-small {
     position: relative;
     display: block;
     z-index: 99;
   }
 
-  .spacer.desktop {
+  .spacer.desktop, .spacer.mobile-smaller {
     display: none;
   }
 
@@ -685,11 +685,12 @@ screen and (max-width: 1100px) and (max-height: 700px) {
   }
 
   nav img {
-    filter: drop-shadow(1 1 0.01rem #aca394);
+    filter: drop-shadow(0.5 0.5 0.5rem #1d1d1d);
   }
 
   #intro {
     background-image: url(../assets/letter-bg.jpg);
+    /* background: #f9fafb; */
   }
 
   .letter {
@@ -706,13 +707,23 @@ screen and (max-width: 1100px) and (max-height: 700px) {
     font-size: calc(1.5rem + 0.1vw);
     /* ~24px */
   }
+  .spacer.desktop, .spacer.mobile-small {
+   display: none;
+  }
 
-  img.spacer.mobile:first-of-type {
+  .spacer.mobile-smaller {
+    position: relative;
+    width: 100vw;
+    display: block;
+    z-index: 99;
+   }
+
+  img.spacer.mobile-smaller:first-of-type {
     background-color: #f9fafb;
   }
 
-  #spacer-cabin {
+  /* #spacer-cabin {
     background-color: #E5DAC6;
-  }
+  } */
 
 }
