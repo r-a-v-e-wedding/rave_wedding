@@ -25,8 +25,8 @@ html {
   height: 100%;
   margin: 0;
   padding: 0;
-
   font-size: 100%;
+
   scrollbar-color: #aca394 #E5DAC6;
 }
 
@@ -346,6 +346,25 @@ section#location p:first-child {
 .script-letter {
   display: none;
 }
+
+.photos {
+  position: absolute;
+  top: 7%;
+  left: 73%;
+  transform: translate(-73%, -7%);
+  width: 150px;
+  z-index: 97;
+}
+
+#photo-01.photos {
+  left: 75%;
+  top: 35%;
+  transform: rotate(5deg);
+}
+#photo-02.photos {
+  z-index: 98;
+  transform: rotate(-3deg);
+ }
 
 .link {
   display: inline;
@@ -682,7 +701,6 @@ screen and (max-width: 1100px) and (max-height: 700px) {
   }
 
   #intro {
-    /* background: url('../assets/letter-bg.jpg'), #f9fafb; */
     background-image: url('../assets/letter-bg.jpg');
     background-size: cover;
     /* background: #f9fafb; */
