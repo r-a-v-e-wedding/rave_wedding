@@ -682,8 +682,8 @@ screen and (max-width: 1100px) and (max-height: 700px) {
   }
 
   #intro {
-    /* background-image: url(../assets/letter-bg.jpg); */
-    background: #f9fafb;
+    background: url('../assets/letter-bg.jpg'), #f9fafb;
+    /* background: #f9fafb; */
   }
 
   .letter {
