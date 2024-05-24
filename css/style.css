@@ -700,6 +700,7 @@ screen and (max-width: 1100px) and (max-height: 700px) {
     /* background-image: url('../assets/letter-bg.jpg');
     background-size: cover; */
     background: #f9fafb;
+    height: 100%;
   }
 
   .letter {
@@ -713,8 +714,7 @@ screen and (max-width: 1100px) and (max-height: 700px) {
   .script-letter p {
     text-align: center;
     font-family: 'Biro';
-    font-size: calc(1.5rem + 0.1vw);
-    /* ~24px */
+    font-size: calc(1.5rem + 0.1vw); /* ~24px */
   }
   .spacer.desktop, .spacer.mobile-small {
    display: none;
