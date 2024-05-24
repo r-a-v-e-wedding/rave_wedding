@@ -61,8 +61,7 @@ a:active {
 
 h1 {
   font-family: 'SelectMono';
-  font-size: calc(1rem + 0.6vw);
-  /* ~16px */
+  font-size: calc(1rem + 0.6vw); /* ~16px */
   font-weight: normal;
   padding: 0;
   margin-top: 0.5vh;
@@ -73,8 +72,7 @@ h1 {
 p {
   text-align: center;
   font-family: 'NotCourier';
-  font-size: calc(1rem + 0.1vw);
-  /* ~16px */
+  font-size: calc(1rem + 0.1vw); /* ~16px */
   padding-right: 5%;
   padding-left: 5%;
 }
@@ -85,8 +83,7 @@ p.question {
 
 ul {
   font-family: 'NotCourier';
-  font-size: calc(1rem + 0.1vw);
-  /* ~16px */
+  font-size: calc(1rem + 0.1vw); /* ~16px */
   padding-right: 5%;
   padding-left: 5%;
   text-align: left;
@@ -132,7 +129,6 @@ a img {
   justify-content: center;
   align-self: center;
   height: calc(40px + 2vh);
-  /*75px*/
 }
 
 a img[alt*="RSVP"],
@@ -278,7 +274,6 @@ section {
   height: 25vh;
 }
 
-
 .section-content.smaller {
   height: 15vh;
 }
@@ -337,6 +332,10 @@ section#intro {
 
 section#location p {
   text-align: left;
+}
+
+section#location p:first-child {
+  text-align: center;
 }
 
 .letter {
