@@ -124,7 +124,7 @@ nav.desktop {
 a img {
   justify-content: center;
   align-self: center;
-  height: 75px;
+  height: calc(50px + 2vh); /*75px*/
 }
 
 a img[alt*="RSVP"], a img[alt*="language"]{
