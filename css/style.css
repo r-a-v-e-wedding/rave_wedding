@@ -246,6 +246,7 @@ a img[alt*="language"] {
 }
 
 section {
+  display: none;
   position: absolute;
   height: 100vh;
   overflow-x: hidden;
