@@ -125,6 +125,10 @@ nav.desktop {
   height: calc(100%/8);
 }
 
+.row a{
+  cursor: pointer;
+}
+
 a img {
   justify-content: center;
   align-self: center;
@@ -147,6 +151,29 @@ a img[alt*="language"] {
   position: relative;
   margin-left: 175px;
   z-index: 97;
+}
+
+.popup{
+  display: block;
+  position: absolute;
+  top: 10vh;
+  left: 200px;
+  width: calc(200px + 2vh);
+  z-index: 99;
+}
+
+.popup p{
+  position: absolute;
+  top: 15px;
+  left: 50px;
+}
+
+.popup a{
+  all: inherit;
+  cursor: pointer;
+  position: absolute;
+  top: 5px;
+  right: 10px;
 }
 
 .sign {
@@ -338,7 +365,7 @@ section#location p:first-child {
 }
 
 .letter {
-  filter: drop-shadow(-5px 3px 7px #1615137a);
+  filter: drop-shadow(-5px 3px 7px #16151350);
   z-index: 96;
 }
 
@@ -441,7 +468,6 @@ th:nth-child(2) {
 #intro {
   background-image: url('../assets/bg-intro.jpg');
   background-size: cover;
-  /* background: #E5DAC6; */
 }
 
 #schedule {
@@ -472,23 +498,6 @@ th:nth-child(2) {
   background: #F2D5EB;
 }
 
-/* #location-sign {
-  width: auto;
-  height: auto;
-  position: relative;
-  clip-path: polygon(
-    0 10%,
-    10% 0,
-    90% 0,
-    100% 10%,
-    100% 0%,
-    100% 100%,
-    0% 100%,
-    0% 0%,
-    0% 0%
-  );
-} */
-
 #footer {
   display: none;
 }
@@ -518,6 +527,10 @@ screen and (max-width: 1100px) and (max-height: 700px) {
     padding: 0;
     z-index: 100;
     overflow: hidden;
+  }
+
+  .popup{
+    display: none;
   }
 
   .row {
@@ -552,10 +565,6 @@ screen and (max-width: 1100px) and (max-height: 700px) {
     border: none;
   }
 
-  .para img {
-    margin-top: inherit;
-  }
-
   a img,
   a img[alt*="RSVP"],
   a img[alt*="language"] {
@@ -565,7 +574,6 @@ screen and (max-width: 1100px) and (max-height: 700px) {
 
   .icon {
     position: relative;
-    /* margin-right: 10px; */
     margin-top: 5%;
     width: calc(125px + 15vw);
     padding: 5px;
@@ -577,7 +585,6 @@ screen and (max-width: 1100px) and (max-height: 700px) {
     padding-bottom: 5px;
     margin-right: 10%;
     margin-left: 10%;
-    /* margin-left: calc(10% - 10px); */
     text-align: center;
 
     background: #ffffff;
@@ -661,9 +668,15 @@ screen and (max-width: 1100px) and (max-height: 700px) {
     scroll-margin-top: 100px;
     scroll-behavior: smooth;
   }
+
+  #intro {
+    background-image: url('../assets/bg-intro.jpg');
+    background-size: cover;
+    /* background-position:  */
+  }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
 
   nav.desktop,
   nav.mobile.large {
@@ -691,7 +704,6 @@ screen and (max-width: 1100px) and (max-height: 700px) {
   #intro {
     background-image: url('../assets/letter-bg.jpg');
     background-size: cover;
-    /* background: #f9fafb; */
     height: 100%;
   }
 

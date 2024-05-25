@@ -34,6 +34,10 @@ $(document).ready(function(){
       }
     });
 
+    $( ".popup a" ).on( "click", function() {
+      $(".popup").css('display', 'none');
+    })
+
     $( ".menu" ).on( "click", function() {
       let button = $(this).attr("id");
         buttonID = button.replace("-btn", "");
