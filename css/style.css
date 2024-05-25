@@ -341,6 +341,7 @@ section#location p:first-child {
 }
 
 .letter {
+  margin-top: 2vh;
   z-index: 96;
 }
 
@@ -392,8 +393,13 @@ section#location p:first-child {
 }
 
 .credit {
-  font-size: calc(0.875rem + 0.1vw);
-  /* ~14px */
+  color: #8b8479;
+  font-size: calc(0.875rem + 0.1vw); /* ~14px */
+}
+
+.credit .link.ref {
+  color: #8b8479;
+  text-decoration: dashed underline #aca394;
 }
 
 .section-table {
@@ -455,7 +461,9 @@ th:nth-child(2) {
 }
 
 #intro {
-  background: #E5DAC6;
+  background-image: url('../assets/bg-intro.jpg');
+  background-size: cover;
+  /* background: #E5DAC6; */
 }
 
 #schedule {
@@ -697,9 +705,9 @@ screen and (max-width: 1100px) and (max-height: 700px) {
   }
 
   #intro {
-    /* background-image: url('../assets/letter-bg.jpg');
-    background-size: cover; */
-    background: #f9fafb;
+    background-image: url('../assets/letter-bg.jpg');
+    background-size: cover;
+    /* background: #f9fafb; */
     height: 100%;
   }
 
