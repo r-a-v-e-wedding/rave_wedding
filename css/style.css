@@ -221,13 +221,11 @@ a img[alt*="language"] {
   border-radius: 100px 100px 0 0;
 }
 
-#location-sign, #faq-sign, #rsvp-sign {
+#location-sign, 
+#faq-sign, 
+#rsvp-sign {
   border-radius: 10px 10px 0 0;
 }
-
-/* #lodging-sign, #gift-sign {
-  border-radius: 10px 10px 0 0;
-} */
 
 .span-sign {
   display: block;
@@ -295,7 +293,6 @@ h2 {
   overflow-y: scroll;
   height: inherit;
 
-  /*** scrollbar ***/
   -ms-overflow-style: none;
   overflow: -moz-scrollbars-none;
   scrollbar-width: none;
@@ -341,32 +338,13 @@ section#location p:first-child {
 }
 
 .letter {
-  margin-top: 2vh;
+  filter: drop-shadow(-5px 3px 7px #1615137a);
   z-index: 96;
 }
 
 .script-letter {
   display: none;
 }
-
-.photos {
-  position: absolute;
-  top: 7%;
-  left: 73%;
-  transform: translate(-73%, -7%);
-  width: 150px;
-  z-index: 97;
-}
-
-#photo-01.photos {
-  left: 75%;
-  top: 35%;
-  transform: rotate(5deg);
-}
-#photo-02.photos {
-  z-index: 98;
-  transform: rotate(-3deg);
- }
 
 .link {
   display: inline;
@@ -587,6 +565,7 @@ screen and (max-width: 1100px) and (max-height: 700px) {
 
   .icon {
     position: relative;
+    /* margin-right: 10px; */
     margin-top: 5%;
     width: calc(125px + 15vw);
     padding: 5px;
@@ -598,14 +577,20 @@ screen and (max-width: 1100px) and (max-height: 700px) {
     padding-bottom: 5px;
     margin-right: 10%;
     margin-left: 10%;
+    /* margin-left: calc(10% - 10px); */
     text-align: center;
 
     background: #ffffff;
     border: #000000 1px solid;
   }
 
-  .section-content.small, .section-content.smaller  {
+  .section-content.small, 
+  .section-content.smaller  {
     height: inherit;
+  }
+
+  .letter {
+    margin-top: 2vh;
   }
 
   .sign {
@@ -653,9 +638,10 @@ screen and (max-width: 1100px) and (max-height: 700px) {
   }
 
   .spacer.mobile-small {
-    position: relative;
     display: block;
+    position: relative;
     width: 100vw;
+    margin-top: 1vh;
     z-index: 99;
   }
 
@@ -677,7 +663,6 @@ screen and (max-width: 1100px) and (max-height: 700px) {
   }
 }
 
-/* MOBILE-LETTER */
 @media screen and (max-width: 600px) {
 
   nav.desktop,
@@ -697,7 +682,6 @@ screen and (max-width: 1100px) and (max-height: 700px) {
     flex-flow: row wrap;
     padding: 0;
     z-index: 100;
-    /* overflow: hidden; */
   }
 
   nav img {
@@ -724,14 +708,17 @@ screen and (max-width: 1100px) and (max-height: 700px) {
     font-family: 'Biro';
     font-size: calc(1.5rem + 0.1vw); /* ~24px */
   }
-  .spacer.desktop, .spacer.mobile-small {
+
+  .spacer.desktop, 
+  .spacer.mobile-small {
    display: none;
   }
 
   .spacer.mobile-smaller {
+    display: block;
     position: relative;
     width: 100vw;
-    display: block;
+    margin-top: 1vh;
     z-index: 99;
    }
 
