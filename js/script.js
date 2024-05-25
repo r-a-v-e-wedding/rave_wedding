@@ -1,3 +1,13 @@
+document.onreadystatechange = function() {
+  if (document.readyState !== "complete") {
+      document.querySelector("body").style.visibility = "hidden";
+      document.querySelector("#overlay").style.visibility = "visible";
+  } else {
+      document.querySelector("#overlay").style.display = "none";
+      document.querySelector("body").style.visibility = "visible";
+  }
+};
+
 $(document).ready(function(){
     const mql = window.matchMedia("(max-width: 1100px)", "(max-width: 1100px) and (max-height: 700px)");
 
