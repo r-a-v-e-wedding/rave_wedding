@@ -2,13 +2,13 @@ $(document).ready(function(){
   document.onreadystatechange = function() {
     if (document.readyState !== "complete") {
         document.querySelector("body").style.visibility = "hidden";
-        document.querySelector("#overlay").style.visibility = "visible";
+        document.querySelector("#loading").style.visibility = "visible";
     } else {
-        document.querySelector("#overlay").style.display = "none";
+        document.querySelector("#loading").style.display = "none";
         document.querySelector("body").style.visibility = "visible";
     }
   };
-  
+
     const mql = window.matchMedia("(max-width: 1100px)", "(max-width: 1100px) and (max-height: 700px)");
 
     mqlHandler();
