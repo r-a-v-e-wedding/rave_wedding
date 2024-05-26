@@ -66,7 +66,6 @@ h1 {
   padding: 0;
   margin-top: 0.5vh;
   margin-bottom: 1vh;
-  ;
 }
 
 p {
@@ -167,6 +166,7 @@ a img[alt*="language"] {
 
 .link.img .icon {
   height: auto;
+  margin-top: 4vh;
 }
 
 .content-fixed {
@@ -212,6 +212,10 @@ a img[alt*="language"] {
 
   background: #ffffff;
   border: 1px #000000 solid;
+}
+
+.sign.smaller {
+  width: 40vw;
 }
 
 .sign-legs {
@@ -263,6 +267,14 @@ a img[alt*="language"] {
 
 #center {
   width: 50vw;
+}
+
+#mobile-h1 {
+  display: none;
+}
+
+.link.simple {
+  display: block;
 }
 
 #schedule-sign {
@@ -337,7 +349,7 @@ section {
   background: #ffffff;
   border: none;
   width: 93%;
-  height: 55vh; /*40vh*/
+  height: 55vh; 
   padding-bottom: calc(10px + 3%);
   margin-right: auto;
   margin-left: auto;
@@ -352,6 +364,7 @@ section {
 
 .section-content.smaller {
   height: 10vh;
+  overflow: hidden;
 }
 
 h2 {
@@ -526,11 +539,11 @@ th:nth-child(2) {
 }
 
 #schedule {
-  background: #c4c4e7;
+  background: #C4C4E7;
 }
 
 #location {
-  background: #b8e4cb;
+  background: #B8E4CB;
 }
 
 #lodging {
@@ -634,6 +647,10 @@ screen and (max-width: 1100px) and (max-height: 700px) {
     padding: 5px;
   }
 
+  #rsvp .icon {
+    margin-top: 7%;
+  }
+
   .section-content {
     width: 80%;
     height: auto;
@@ -687,7 +704,11 @@ screen and (max-width: 1100px) and (max-height: 700px) {
   h1 {
     font-size: calc(1.25rem + 0.3vw); /* ~20px */
     margin-top: calc(10px + 1.5vw);
+  }
 
+  .section-content.smaller{
+    border: none;
+    background: none;
   }
 
   h2 {
@@ -727,12 +748,10 @@ screen and (max-width: 1100px) and (max-height: 700px) {
   #intro {
     background-image: url('../assets/bg-intro.jpg');
     background-size: cover;
-    /* background-position:  */
   }
 }
 
 @media screen and (max-width: 700px) {
-
   nav.desktop,
   nav.mobile.large {
     display: none;
