@@ -165,6 +165,10 @@ a img[alt*="language"] {
   padding: 5px;
 }
 
+.link.img .icon {
+  height: auto;
+}
+
 .content-fixed {
   position: relative;
   margin-left: 175px;
@@ -174,24 +178,27 @@ a img[alt*="language"] {
 .popup{
   display: block;
   position: absolute;
-  top: 10vh;
+  top: 4vh;
   left: 200px;
   width: calc(200px + 2vh);
   z-index: 99;
 }
 
 .popup p{
-  position: absolute;
-  top: 15px;
-  left: 50px;
+  position: relative;
+  top: 95px;
+  left: 12px;
 }
 
 .popup a{
-  all: inherit;
   cursor: pointer;
-  position: absolute;
-  top: 5px;
-  right: 10px;
+  position: relative;
+  background: none;
+  border: none;
+  top: 110px;
+  left: calc(180px + 2vh);
+  padding-top: 1%;
+  width: 10px;
 }
 
 .sign {
@@ -267,9 +274,12 @@ a img[alt*="language"] {
 }
 
 #location-sign, 
-#faq-sign, 
-#rsvp-sign {
+#faq-sign {
   border-radius: 10px 10px 0 0;
+}
+
+#rsvp-sign {
+  border-radius: 10px 10px 10px 10px;
 }
 
 .span-sign {
@@ -277,11 +287,30 @@ a img[alt*="language"] {
   width: 250px;
 }
 
-#sign-link {
+#cabins #sign-link {
   position: absolute;
   font-size: 18px;
   margin-top: 30px;
   margin-left: 70px;
+}
+
+#cabins #form {
+  position: absolute;
+  font-size: 18px;
+  margin-top: 30px;
+  margin-left: 70px;
+}
+
+/* #form img{
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+} */
+
+#form #sign-link {
+  position: absolute;
+  font-size: 18px;
+  margin-top: 30px;
+  margin-left: 90px;
 }
 
 #mobile-link {
