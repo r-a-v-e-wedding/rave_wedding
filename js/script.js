@@ -32,8 +32,7 @@ $(document).ready(function(){
     const mql = window.matchMedia("(max-width: 1100px)", "(max-width: 1100px) and (max-height: 700px)");
 
     mqlHandler();
-    mql.addEventListener("change", mqlHandler);
-
+    $(mql).on("change", mqlHandler);
 
     function mqlHandler(){
       if (mql.matches) {
