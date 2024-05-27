@@ -1,0 +1,424 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>R.A.V.E</title>
+    <meta name="author" content="sam bordeleau" />
+    <meta property="og:title" content="r.a.v.e" />
+    <meta property="og:description" content="r.a.v.e site web marriage" />
+    <meta property="og:url" content="ravewedding.ca" />
+    <link rel="apple-touch-icon" sizes="57x57" href="assets/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="assets/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="assets/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="assets/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="assets/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="assets/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="assets/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="assets/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="assets/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="assets/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="assets/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="assets/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <script src="https://code.jquery.com/jquery-3.7.1.js"
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/script.js"></script>
+</head>
+
+<body>
+    <div id="loading">
+        <p>Chargement...</p>
+   </div>
+    <nav class="desktop">
+        <div class="row">
+            <a class="menu" id="intro-btn" title="introduction"><img src="assets/icons/desktop/08_menu.png"
+                    alt="intro"></a>
+            <a class="menu" id="schedule-btn" title="horaire"><img src="assets/icons/desktop/01_menu.png"
+                    alt="horaire"></a>
+            <a class="menu" id="location-btn" title="lieu"><img src="assets/icons/desktop/02_menu.png"
+                    alt="lieu"></a>
+            <a class="menu" id="lodging-btn" title="hébergement"><img src="assets/icons/desktop/03_menu.png"
+                    alt="hébergement"></a>
+            <a class="menu" id="faq-btn" title="FAQ"><img src="assets/icons/desktop/04_menu.png" alt="FAQ"></a>
+            <a class="menu" id="gift-btn" title="registre de dons"><img src="assets/icons/desktop/05_menu.png"
+                    alt="registre de dons"></a>
+            <a class="menu" id="outreach-btn" title="participation"><img src="assets/icons/desktop/06_menu.png"
+                    alt="Participation"></a>
+            <a class="menu" id="rsvp-btn" title="RSVP"><img src="assets/icons/desktop/07_menu.png" alt="RSVP"></a>
+            <a href="index.html" class="desktop" title="(EN)"><img src="assets/icons/desktop/09_menu.png" alt="version anglaise"></a>
+        </div>
+    </nav>
+    <nav class="mobile large">
+        <div class="row" id="row-top">
+            <a href="#schedule" title="horaire"><img src="assets/icons/mobile/large/01_menu.png" alt="horaire"></a>
+            <a href="#location" title="lieu"><img src="assets/icons/mobile/large/02_menu.png" alt="lieu"></a>
+            <a href="#lodging" title="hébergement"><img src="assets/icons/mobile/large/03_menu.png" alt="hébergement"></a>
+            <a href="#faq" title="FAQ"><img src="assets/icons/mobile/large/04_menu.png" alt="FAQ"></a>
+            <a href="#gift" title="registre de dons"><img src="assets/icons/mobile/large/05_menu.png"
+                    alt="registre de dons"></a>
+            <a href="#outreach" title="participation"><img src="assets/icons/mobile/large/06_menu.png" alt="participation"></a>
+        </div>
+        <div class="row" id="row-btm">
+            <a href="#intro" title="introduction"><img src="assets/icons/mobile/large/08_menu.png"
+                    alt="intro"></a>
+            <a href="#rsvp" title="RSVP"><img src="assets/icons/mobile/large/07_menu.png" alt="RSVP"></a>
+            <a href="index.html" title="(EN)"><img src="assets/icons/mobile/large/09_menu.png" alt="version anglaise"></a>
+        </div>
+    </nav>
+
+    <nav class="mobile small">
+        <div class="row" id="row-top">
+            <a href="#schedule" title="horaire"><img src="assets/icons/mobile/small/01_menu.svg" alt="horaire"></a>
+            <a href="#location" title="lieu"><img src="assets/icons/mobile/small/02_menu.svg" alt="lieu"></a>
+            <a href="#lodging" title="hébergement"><img src="assets/icons/mobile/small/03_menu.svg" alt="hébergement"></a>
+            <a href="#faq" title="FAQ"><img src="assets/icons/mobile/small/04_menu.svg" alt="FAQ"></a>
+            <a href="#gift" title="registre de dons"><img src="assets/icons/mobile/small/05_menu.svg"
+                    alt="registre de dons"></a>
+            <a href="#outreach" title="participation"><img src="assets/icons/mobile/small/06_menu.svg" alt="participation"></a>
+        </div>
+        <div class="row" id="row-btm">
+            <a href="#intro" title="introduction"><img src="assets/icons/mobile/small/08_menu.svg"
+                    alt="intro"></a>
+            <a href="#rsvp" title="RSVP"><img src="assets/icons/mobile/small/07_menu.svg" alt="RSVP"></a>
+            <a href="index.html" title="(EN)"><img src="assets/icons/mobile/small/09_menu.svg" alt="version anglaise"></a>
+        </div>
+    </nav>
+    <div class="popup"><a>×</a><p>CLIQUEZ ICI<br>POUR NAVIGUER</p><img  src="assets/popup-sign.svg" alt="CLIQUEZ ICI POUR NAVIGUER"></div>
+    <div class="content-scroll" id="content">
+        <section id="intro">
+            <img class="letter" src="assets/lettre.png"
+                alt="Vous êtes cordialement invités au mariage d'Emma Forgues et Nicolas Levy ! Une fin de semaine célébratant l'amour, le plein air, la musique et la danse. Du 6 au 8 septembre 2024 dans un camp de vacances à 1h de Montréal. Nous espérons vous y voir ! xoxo - Nic & Emma">
+            <div class="script-letter">
+                <br><br>
+                <p>Vous êtes cordialement invités
+                    <br>au mariage d'Emma Forgues et Nicolas Levy !
+                    <br><br>Une fin de semaine célébratant l'amour,
+                    <br>le plein air, la musique et la danse;
+                    <br><br>Du 6 au 8 septembre 2024
+                    <br>dans un camp de vacances à 1h de Montréal.
+                    <br><br>Nous espérons vous y voir !
+                    <br><br>xoxo
+                    <br>Nic & Emma
+                </p>
+            </div>
+            <img class="spacer mobile-small" src="assets/spacer/mobile/small/spacer_01.png" alt="séparateur en gazon">
+            <img class="spacer mobile-smaller" src="assets/spacer/mobile/smaller/spacer_01.png" alt="séparateur en gazon">
+        </section>
+        <section id="schedule">
+            <div class="sign" id="schedule-sign">
+                <img class="icon" src="assets/icons/section/01_full.png" alt="icône soleil">
+                <div class="section-content">
+                    <h1>HORAIRE</h1>
+                    <div class="para">
+                        <p>Nous vous encourageons tous à loger au camp pendant tout le week-end afin de participer pleinement aux festivités prévues ✧</p>
+                        <br>
+                        <div class="section-table">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th colspan="2">VENDREDI</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th class="table-time">12:00-18:00</th>
+                                        <th>Arrivée + On s'installe 🛬</th>
+                                    </tr>
+                                    <tr>
+                                        <th class="table-time">18:00-20:00</th>
+                                        <th>Dîner de bienvenue 🥘</th>
+                                    </tr>
+                                    <tr>
+                                        <th class="table-time">20:00-22:00</th>
+                                        <th>Spectacle de talents 🕺</th>
+                                    </tr>
+                                    <tr>
+                                        <th class="table-time">20:00-00:00</th>
+                                        <th>Gros feu 🔥</th>
+                                    </tr>
+                                </tbody>
+                                <thead>
+                                    <tr>
+                                        <th colspan="2">SAMEDI</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th class="table-time">11:00-12:00</th>
+                                        <th>Brunch 🍳</th>
+                                    </tr>
+                                    <tr>
+                                        <th class="table-time">12:00-16:00</th>
+                                        <th>Activités du camp + Ateliers 🧙</th>
+                                    </tr>
+                                    <tr>
+                                        <th class="table-time">16:00-17:00</th>
+                                        <th style="font-weight: bold;"> Cérémonie ! 💍</th>
+                                    </tr>
+                                    <tr>
+                                        <th class="table-time">17:30-19:30</th>
+                                        <th style="font-weight: bold;">Dîner + Rôtis (roast) & Pains grillés (toast) 🍾</th>
+                                    </tr>
+                                    <tr>
+                                        <th class="table-time">19:30-21:00</th>
+                                        <th>Good Boy Dancing 😇</th>
+                                    </tr>
+                                    <tr>
+                                        <th class="table-time">22:00-??:??</th>
+                                        <th>Bad Boy Dancing 😈</th>
+                                    </tr>
+                                </tbody>
+                                <thead>
+                                    <tr>
+                                        <th colspan="2">DIMANCHE</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th class="table-time">11:00-12:00</th>
+                                        <th>Brunch (restants du weekend) ♻️</th>
+                                    </tr>
+                                    <tr>
+                                        <th class="table-time">12:00-18:00</th>
+                                        <th>Adieu! &lt;3</th>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="sign-legs">
+                <div class="leg" id="left"></div>
+                <div id="center"></div>
+                <div class="leg" id="right"></div>
+            </div>
+            <img class="spacer mobile-small" src="assets/spacer/mobile/small/spacer_00.png" alt="séparateur en gazon">
+            <img class="spacer mobile-smaller" src="assets/spacer/mobile/smaller/spacer_00.png" alt="séparateur en gazon">
+        </section>
+        <section id="location">
+            <img class="img-large" id="camp" src="assets/content/location-1.jpg" alt="carte du Camp Wingate">
+            <img class="img-large" id="drive" src="assets/content/location-2.jpg" alt="directions de l'aéroport de Montréal vers Saint-Adolphe-d’Howard">
+            <div class="sign" id="location-sign">
+                <img class="icon" src="assets/icons/section/02_full.png" alt="icône jumelles">
+                <div class="section-content">
+                    <h1>LIEU</h1>
+                    <div class="para">
+                        <img id="camp" src="assets/content/location-1.jpg" alt="carte du Camp Wingate">
+                        <h2>ADDRESSE :</h2>
+                        <p>1580 Chem. du Lac-des-Trois-Frères, Saint-Adolphe-d'Howard, QC J0T
+                            2B0.</p>
+                        <a class="link external" href="https://maps.app.goo.gl/JNhzJFMGyFDnTqSX9"
+                            target="_blank">Voir sur Google Maps</a>
+                        <h2>STATIONNEMENT :</h2>
+                        <p>Stationnement gratuit sur le camp.</p>
+                        <h2>LOCATION DE VOITURE À L'AÉROPORT :</h2>
+                        <p>Prenez l'autoroute 13 Nord et suivez les indications pour la 15 Nord jusqu'à la ville de Saint Sauveur. De là, suivez les indications pour la ville de Saint-Adolphe-d'Howard.</p>
+                        <br>
+                        <img id="drive" src="assets/content/location-2.jpg" alt="directions de l'aéroport de Montréal vers Saint-Adolphe-d’Howard">
+                        <h2>COVOITURAGE :</h2>
+                        <p>Que vous louiez une voiture à l'aéroport ou que vous veniez de Montréal, le covoiturage peut être coordonné sur notre <em>serveur Discord</em> (dans la section <a
+                                class="link ref" href="#outreach">Participation</a>) via cette <a
+                                class="link external" href="#">feuille Google</a>.</p>
+                        <p>Ne vous inquiétez pas si vous n'avez pas accès à une voiture, vous serez certainement en mesure de venir !</p>
+                    </div>
+                </div>
+            </div>
+            <div class="sign-legs">
+                <div class="leg" id="left"></div>
+                <div id="center"></div>
+                <div class="leg" id="right"></div>
+            </div>
+            <img class="spacer mobile-small" src="assets/spacer/mobile/small/spacer_01.png" alt="séparateur en gazon">
+            <img class="spacer mobile-smaller" src="assets/spacer/mobile/smaller/spacer_01.png" alt="séparateur en gazon">
+        </section>
+        <section id="lodging">
+            <div class="sign" id="lodging-sign">
+                <img class="icon" src="assets/icons/section/03_full.png" alt="icône maison">
+                <div class="section-content">
+                    <h1>HÉBERGEMENT</h1>
+                    <div class="para">
+                        <p>Le camp Wingate peut accueillir jusqu'à 400 campeurs ! Il y a donc suffisamment d'espace pour dormir sur place pendant tout le week-end.</p>
+                        <img src="assets/content/camp-1.jpg" alt="Photo du camp">
+                        <h2>CABANES :</h2>
+                        <ul>
+                            <li>Le camp dispose d'une vingtaine de cabanes pouvant accueillir de 10 à 20 personnes en lits superposés.</li>
+                            <li>Toutes les cabanes sont équipées d'une salle de bain et d'un lavabo.</li>
+                            <li>Certaines cabanes sont équipées de douches, d'autres d'une cabine de douche à côté.</li>
+                            <li>Certaines cabanes sont plus proches des festivités, tandis que d'autres sont plus éloignées du bruit et de l'activité.</li>
+                            <li>La plupart des lits superposés peuvent être collés ensembles pour créer des lits doubles.</li>
+                        </ul>
+                        <img src="assets/content/cabins-1.jpg" alt="Photo des cabanes (extérieur)">
+                        <img src="assets/content/cabins-2.jpg" alt="Photo des cabanes (extérieur)">
+                        <img src="assets/content/cabins-3.jpg" alt="Photo des cabanes (intérieur)">
+                        <h2>RÉSERVATION :</h2>
+                        <ul>
+                            <li>Une fois les RSVP complétés, nous créerons nos propres groupes pour les cabanes, en fonction des groupes de familles ou d'amis (et de tout autre détail que vous aurez fourni sur le formulaire RSVP).</li>
+                            <li>À partir de là, vous serez libre de modifier l'attribution de votre cabane à votre guise.</li>
+                        </ul>
+                        <h2>Autre hébergement :</h2>
+                        <ul>
+                            <li>Il y a peu d'espace pour des tentes si vous préférez loger ainsi sur le camp. Si c'est le cas, veuillez inclure cette information dans votre RSVP.</li>
+                            <li>Si vous préférez ne pas loger sur le camp : Vous trouverez des chalets, BnB, des hôtels et des motels dans la ville voisine de Saint-Adolphe-d'Howard. Nous vous conseillons de vous prendre à l'avance si c'est le cas.</li>
+                        </ul>
+                        <p id="mobile-link"><br><a class="link external"
+                                href="https://drive.google.com/drive/folders/1goo7SXUNBn8ho8EIUtLz_Z3tUvBFEfZL">Cliquez 
+                                ici pour voir les cabanes</a><br><br></p>
+                    </div>
+                </div>
+            </div>
+            <div class="sign-legs">
+                <div class="leg" id="left"></div>
+                <div id="center"></div>
+                <div class="leg" id="right"></div>
+            </div>
+            <div class="span-sign" id="cabins">
+                <a class="link external" id="sign-link-fr"
+                    href="https://drive.google.com/drive/folders/1goo7SXUNBn8ho8EIUtLz_Z3tUvBFEfZL">CLIQUEZ ICI<br>POUR VOIR LES CABANES</a>
+                <img src="assets/sign-img.svg" alt="affiche blanche">
+                <div class="sign-leg">
+                    <div class="leg single"></div>
+                </div>
+            </div>
+            <img class="spacer mobile-small" src="assets/spacer/mobile/small/spacer_00.png" alt="séparateur en gazon">
+        <img class="spacer mobile-smaller" src="assets/spacer/mobile/smaller/spacer_00.png" alt="séparateur en gazon">
+        </section>
+        <section id="faq">
+            <div class="sign" id="faq-sign">
+                <img class="icon" src="assets/icons/section/04_full.png" alt="icône point d'interrogation">
+                <div class="section-content">
+                    <h1>FAQ</h1>
+                    <div class="para">
+                        <p class="question">Y a-t-il un code vestimentaire ?</p>
+                        <p>NON! Il n'y a pas de code vestimentaire formel. Nous vous encourageons à vous habiller de la manière la plus X-TRA, fashionable, ou la plus confortable qui soit. Les couleurs sont encouragées !</p>
+                        <br>
+                        <p class="question">S'agit-il d'un mariage traditionnel ? À quoi dois-je m'attendre ?</p>
+                        <p>Ce mariage sera un mélange d'activités traditionnelles et non traditionnelles, y compris de la musique forte et beaucoup de danse. Vous devez vous attendre à un week-end amusant et festif dans un camp d'été, avec de l'espace pour faire la fête ou profiter de l'extérieur comme vous le souhaitez.</p>
+                        <br>
+                        <p class="question">Puis-je amener des enfants ou un +1 ?</p>
+                        <p>Oui ! Veuillez indiquer dans le formulaire RSVP si vous souhaitez amener quelqu'un.</p>
+                        <br>
+                        <p class="question">Y aura-t-il de la nourriture pendant tout le week-end ?</p>
+                        <p>Oui ! Nous servons des repas complets pour : le dîner du vendredi, le brunch du samedi, le dîner du samedi et le brunch du dimanche. Des options sans gluten et végétariennes seront disponibles.</p>
+                        <br>
+                        <p class="question">Devons-nous payer pour la nourriture et l'hébergement ?</p>
+                        <p>Vous ne devez pas payer pour votre hébergement ni les 4 repas que nous servirons pendant le week-end. Cependant, nous accepterons les dons sur la base du principe "Payez ce que vous pouvez" pour nous aider à couvrir les coûts via notre <a class="link external" href="https://docs.google.com/spreadsheets/d/18knHC3WnP5qEXXl6nCb6wgX34W8T3YoShR0SDIilhCw/edit?usp=sharing">registre de dons</a>.</p>
+                        <br>
+                        <p class="question">Qu'en est-il de l'alcool ?</p>
+                        <p>BYOB!</p>
+                        <br>
+                        <p class="question">Puis-je participer d'une manière ou d'une autre ?</p>
+                        <p>Oui ! Il s'agit d'un week-end où la collaboration est encouragées ! Chacun est invité à participer de la manière qu'il souhaite. Voici des exemples :
+                        <ul>
+                            <li>Décorer vos cabanes !!!!</li>
+                            <li>Amener une installation sonore et/ou visuelle sur le camp.</li>
+                            <li>Animer une activité ou un atelier le samedi en journée.</li>
+                            <li>Faire du bénévolat (voir le <a class="link external" href="https://forms.gle/Vb9VnTaDCeNu6uCh7"
+                                    target="_blank">formulaire RSVP</a>).
+                            </li>
+                            <li>Participer au concours de talents.</li>
+                        </ul>
+                        <p>Rejoindre le <a class="link external" href="https://discord.gg/DJ9JvYMnNX"
+                                target="_blank">serveur Discord</a> pour coordonner ta participation.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="sign-legs">
+                <div class="leg" id="left"></div>
+                <div id="center"></div>
+                <div class="leg" id="right"></div>
+            </div>
+            <img class="spacer mobile-small" src="assets/spacer/mobile/small/spacer_01.png" alt="séparateur en gazon">
+            <img class="spacer mobile-smaller" src="assets/spacer/mobile/smaller/spacer_01.png" alt="séparateur en gazon">
+        </section>
+        <section id="gift">
+            <div class="sign small" id="gift-sign">
+                <img class="icon" src="assets/icons/section/05_full.png" alt="icône cadeau">
+                <div class="section-content small">
+                    <h1>REGISTRE DE DONS</h1>
+                    <div class="para">
+                        <p>Votre présence et votre participation enthousiaste à notre mariage sont le plus beau cadeau que nous puissions demander.</p>
+                        <p>Cependant, si vous souhaitez contribuer à notre nouvelle vie commune, nous avons sélectionné des articles qui nous aideront à commencer notre vie.</p>
+                        <p><a class="link external"
+                                href="https://docs.google.com/spreadsheets/d/18knHC3WnP5qEXXl6nCb6wgX34W8T3YoShR0SDIilhCw/edit?usp=sharing"
+                                target="_blank">Vous pouvez accéder à la liste de cadeaux ici</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="sign-legs">
+                <div class="leg small" id="left"></div>
+                <div id="center"></div>
+                <div class="leg small" id="right"></div>
+            </div>
+            <img class="spacer mobile-small" src="assets/spacer/mobile/small/spacer_00.png" alt="séparateur en gazon">
+        <img class="spacer mobile-smaller" src="assets/spacer/mobile/smaller/spacer_00.png" alt="séparateur en gazon">
+        </section>
+        <section id="outreach">
+            <div class="sign small" id="outreach-sign">
+                <img class="icon" src="assets/icons/section/06_full.png" alt="icône colombe">
+                <div class="section-content small">
+                    <h1>PARTICIPATION</h1>
+                    <div class="para">
+                        <p>Pour toute question, vous pouvez nous envoyer un courriel à l'adresse suivante : <a class="link ref"
+                                href="mailto:nic.emm.amour@gmail.com">nic.emm.amour@gmail.com</a></p>
+                        <p>Toute la coordination avant le mariage - covoiturage, installations artistiques, ateliers, bénévolat - se fera sur Discord, une plateforme de messagerie de groupe avec différents canaux en fonction du sujet.</p>
+                        <p id="mobile-link"><a class="link external" href="https://discord.gg/DJ9JvYMnNX" target="_blank">Cliquez ici pour vous inscrire</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="sign-legs">
+                <div class="leg small" id="left"></div>
+                <div id="center"></div>
+                <div class="leg small" id="right"></div>
+            </div>
+            <div class="span-sign" id="form">
+                <a class="link external" id="sign-link-fr"
+                    href="https://discord.gg/DJ9JvYMnNX">CLIQUEZ ICI<br>POUR VOUS<br>INSCRIRE</a>
+                <img src="assets/sign-img.svg" alt="">
+                <div class="sign-leg">
+                    <div class="leg single"></div>
+                </div>
+                </div>
+            <img class="spacer mobile-small" src="assets/spacer/mobile/small/spacer_01.png" alt="séparateur en gazon">
+            <img class="spacer mobile-smaller" src="assets/spacer/mobile/smaller/spacer_01.png" alt="séparateur en gazon">
+        </section>
+        <section id="rsvp">
+            <div class="sign smaller" id="rsvp-sign">
+                <a class="link img" href="https://forms.gle/Vb9VnTaDCeNu6uCh7"><img class="icon" src="assets/icons/section/07_full.png" alt="icône enveloppe"></a>
+                <div class="section-content smaller">
+                    <h1 id="mobile-h1">RSVP</h1>
+                    <a class="link external" href="https://forms.gle/Vb9VnTaDCeNu6uCh7"><h1>Cliquez ici pour RSVP !</h1></a>
+                    <p>Merci de le faire avant le 30 juillet</p>
+                    <div id="p-desktop"><p>Nous sommes impatients de vous voir !</p>
+                    <p>♡ Nic & Emma</p>
+                    </div>
+                </div>
+            </div>
+            <div class="sign-legs">
+                <div class="leg smaller" id="left"></div>
+            </div>
+            <img class="spacer mobile-small" src="assets/spacer/mobile/small/spacer_00.png" alt="séparateur en gazon">
+            <img class="spacer mobile-smaller" src="assets/spacer/mobile/smaller/spacer_00.png" alt="séparateur en gazon">
+        </section>
+        <section id="footer">
+            <br><br>
+            <p>Nous sommes impatients de vous voir !<br>♡<br>Nic & Emma</p>
+            <br>
+            <p class="credit">site web par <a class="link ref" href="https://lobotomi-e.net/" target="_blank">sam
+                    bordeleau</a></p>
+        </section>
+    </div>
+    <span><img class="spacer desktop" src="assets/spacer/desktop/spacer_desktop.png" alt="séparateur en gazon"></span>
+</body>
+
+</html>
