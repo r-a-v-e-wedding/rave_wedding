@@ -1,8 +1,7 @@
 $(document).ready(function () {
-  var is_safari = navigator.userAgent.toLowerCase().indexOf('safari/') > -1;
+  // var is_safari = navigator.userAgent.toLowerCase().indexOf('safari/') > -1;
 
-  if (is_safari != false) {alert("This website is best viewed on Firefox or Chrome or Edge")}
-
+  // if (is_safari != false) {alert("This website is best viewed on Firefox or Chrome or Edge")}
   document.onreadystatechange = function () {
     if (document.readyState !== "complete") {
       document.querySelector("body").style.visibility = "hidden";
