@@ -9,6 +9,9 @@ $(document).ready(function(){
     }
   };
 
+  let content = $("#content");
+  let section = $("section");
+
     var campImg = $("#camp.img-large");
     var driveImg = $("#drive.img-large");
 
@@ -33,13 +36,14 @@ $(document).ready(function(){
 
 
     function mqlHandler(){
-      let content = $("#content");
-      let section = $("section");
       if (mql.matches) {
                   content.attr("class", "content-scroll");
                   section.attr("class", "section-mobile")
                   $(section).css("display", "block");
                   // $(".letter").attr("src", "assets/letter@075x.png")
+                  $("#location-sign").show();
+                  $("#location").css("background", "#B8E4CB");
+                  $(".img-large").css("display", "none");
                   $("#location .section-content img").css("cursor", "default");
                   $(".img-large").css("cursor", "default");
       } else {
@@ -81,20 +85,21 @@ $(document).ready(function(){
 
         if ($(campImg || driveImg).css("display", "inline")){
           showAll();
-          $(".img-large").css("display", "none")
+          $(".img-large").css("display", "none");
         } 
 
     } );
     
-    $( ".content-fixed #location img" ).on( "click", function() {
-      if ( $(this).is("#camp")) {
+    $(".content-fixed #location img").on( "click", function() {
+      console.log(mql.matches)
+      if (content.hasClass("content-fixed") && $(this).is("#camp")) {
         $(campImg).toggle();
         if ($(campImg).is(":visible")){
           hideAll();
         } else {
           showAll();
         }
-      } else if ( $(this).is("#drive") ) {
+      } else if (content.hasClass("content-fixed") && $(this).is("#drive") ) {
         $(driveImg).toggle();
         if ($(driveImg).is(":visible")){
           hideAll();

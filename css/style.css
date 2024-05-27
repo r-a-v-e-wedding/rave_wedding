@@ -437,6 +437,7 @@ section#location p:first-child {
 }
 
 .letter {
+  margin-top: 2vh;
   filter: drop-shadow(-5px 3px 7px #16151350);
   z-index: 96;
 }
