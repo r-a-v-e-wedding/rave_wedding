@@ -84,16 +84,16 @@ p.question {
 ul {
   font-family: 'NotCourier';
   font-size: calc(1rem + 0.1vw); /* ~16px */
+  text-align: left;
   padding-right: 5%;
   padding-left: 5%;
-  text-align: left;
 }
 
 li {
   margin-left: 10px;
 }
 
-/* DESKTOP */
+/* --------- DESKTOP --------- */
 nav.mobile.large,
 nav.mobile.small {
   display: none;
@@ -106,27 +106,27 @@ nav.desktop {
   z-index: 99;
 }
 
-#loading{
+#loading {
   display: flex;
-  position: absolute;
-
   justify-content: center;
   align-content: center;
+  position: absolute;
   width: 100%;
   height: 100%;
   background-color: #E5DAC6;
-  z-index:100;
+  z-index: 100;
 }
 
-#loading p{
+#loading p {
   justify-self: center;
   align-content: center;
 }
 
 .row {
   display: flex;
-  position: relative;
   flex-direction: column;
+
+  position: relative;
   top: 0;
   width: 175px;
 }
@@ -138,11 +138,11 @@ nav.desktop {
 #lang {
   position: fixed;
   right: 0;
-  z-index: 99;
   height: calc(100%/8);
+  z-index: 99;
 }
 
-.row a{
+.row a {
   cursor: pointer;
 }
 
@@ -159,9 +159,9 @@ a img[alt*="language"] {
 
 .icon {
   position: relative;
-  margin-top: 2vh;
   width: calc(100px + 5vw);
   padding: 5px;
+  margin-top: 2vh;
 }
 
 .link.img .icon {
@@ -175,7 +175,7 @@ a img[alt*="language"] {
   z-index: 97;
 }
 
-.popup{
+.popup {
   display: block;
   position: absolute;
   top: 4vh;
@@ -184,21 +184,22 @@ a img[alt*="language"] {
   z-index: 99;
 }
 
-.popup p{
+.popup p {
   position: relative;
   top: 95px;
   left: 12px;
 }
 
-.popup a{
-  cursor: pointer;
+.popup a {
   position: relative;
-  background: none;
-  border: none;
   top: 110px;
   left: calc(180px + 2vh);
-  padding-top: 1%;
   width: 10px;
+  padding-top: 1%;
+
+  background: none;
+  border: none;
+  cursor: pointer;
 }
 
 .sign {
@@ -224,21 +225,21 @@ a img[alt*="language"] {
 
 .sign-legs {
   display: flex;
-  position: absolute;
   justify-content: center;
+  position: absolute;
   left: 50%;
-  transform: translate(-50%);
   bottom: 0;
+  transform: translate(-50%);
   width: 50vw;
 }
 
 .span-sign {
   display: block;
   position: absolute;
-  width: 250px;
   left: 90%;
-  transform: translate(-90%);
   bottom: 0;
+  transform: translate(-90%);
+  width: 250px;
   margin: 0;
   z-index: 99;
 }
@@ -251,7 +252,7 @@ a img[alt*="language"] {
   border-radius: 100px 100px 0 0;
 }
 
-#location-sign, 
+#location-sign,
 #faq-sign {
   border-radius: 10px 10px 0 0;
 }
@@ -277,9 +278,9 @@ a img[alt*="language"] {
 }
 
 .leg.single {
-  margin-left: 125px;
   width: 40px;
   height: 15vh;
+  margin-left: 125px;
   margin-top: -10px;
   z-index: 98;
 }
@@ -331,11 +332,12 @@ a img[alt*="language"] {
 section {
   display: none;
   position: absolute;
+  width: calc(100vw - 175px);
   height: 100vh;
-  overflow-x: hidden;
   top: 0;
   right: 0;
-  width: calc(100vw - 175px);
+  overflow-x: hidden;
+
   text-align: center;
   align-items: center;
 }
@@ -345,19 +347,20 @@ section {
 }
 
 .section-content {
-  background: #ffffff;
-  border: none;
   width: 93%;
-  height: 55vh; 
+  height: 55vh;
   padding-bottom: calc(10px + 3%);
   margin-right: auto;
   margin-left: auto;
+
+  background: #ffffff;
+  border: none;
 }
 
-.section-content.small, 
+.section-content.small,
 .section-content.smaller {
-  padding-bottom: 1%;
   height: auto;
+  padding-bottom: 1%;
   overflow: visible;
 }
 
@@ -372,10 +375,10 @@ h2 {
 }
 
 .para {
-  border: #000000 1px solid;
   position: relative;
-  overflow-y: scroll;
   height: inherit;
+  border: #000000 1px solid;
+  overflow-y: scroll;
 
   -ms-overflow-style: none;
   overflow: -moz-scrollbars-none;
@@ -392,32 +395,32 @@ h2 {
   border: 1px #000000 solid;
 }
 
- #location .section-content img {
+#location .section-content img {
   width: 50%;
 }
 
-.img-large{
+.img-large {
   display: none;
   position: relative;
-  margin-left: auto;
-  margin-right: auto;
   top: 1%;
   height: 98%;
   width: auto;
+  margin-left: auto;
+  margin-right: auto;
   border: 1px #000000 solid;
   z-index: 100;
 }
 
 .spacer.desktop {
-  position: fixed;
-  bottom: 0;
-  right: 0;
   display: inline;
+  position: fixed;
+  right: 0;
+  bottom: 0;
   width: 100vmax;
   z-index: 98;
 }
 
-.spacer.mobile-small, 
+.spacer.mobile-small,
 .spacer.mobile-smaller {
   display: none;
 }
@@ -457,10 +460,10 @@ section#location p:first-child {
 
 .link:active {
   background: none;
+  padding: 0;
   border: none;
   mix-blend-mode: none;
   font-style: italic;
-  padding: 0;
 }
 
 .link.external {
@@ -477,11 +480,11 @@ section#location p:first-child {
   text-decoration: none;
 }
 
-#p-desktop{
+#p-desktop {
   display: inline;
 }
 
-.credit, 
+.credit,
 .credit .link.ref {
   color: #8b8479;
   font-size: calc(0.8rem + 0.1vw); /* ~14px */
@@ -531,7 +534,7 @@ th:nth-child(2) {
 .table-time {
   font-family: 'SelectMono';
   font-weight: lighter;
-  font-size: calc(0.875rem + 0.1vw);/* ~14px */
+  font-size: calc(0.875rem + 0.1vw); /* ~14px */
 }
 
 #cabin-img {
@@ -586,9 +589,11 @@ th:nth-child(2) {
   display: none;
 }
 
-/* MOBILE */
+/* --------- MOBILE --------- */
+/* -- small desktop window or large mobile device --*/
 @media screen and (max-width: 1100px),
 screen and (max-width: 1100px) and (max-height: 700px) {
+
   nav.desktop,
   nav.mobile.small,
   a.desktop {
@@ -606,14 +611,14 @@ screen and (max-width: 1100px) and (max-height: 700px) {
 
   nav.mobile.large {
     display: flex;
-    top: 0;
     flex-flow: row wrap;
+    top: 0;
     padding: 0;
     z-index: 100;
     overflow: hidden;
   }
 
-  .popup{
+  .popup {
     display: none;
   }
 
@@ -636,16 +641,16 @@ screen and (max-width: 1100px) and (max-height: 700px) {
     position: relative;
     width: 100vw;
     height: inherit;
-    overflow-x: inherit;
-    margin: 0;
     padding: 0;
+    margin: 0;
+    overflow-x: inherit;
   }
 
   .para {
-    padding: 0 5px 5px 5px;
     position: relative;
-    overflow: visible;
     height: inherit;
+    padding: 0 5px 5px 5px;
+    overflow: visible;
     border: none;
   }
 
@@ -658,9 +663,9 @@ screen and (max-width: 1100px) and (max-height: 700px) {
 
   .icon {
     position: relative;
-    margin-top: 5%;
     width: calc(125px + 15vw);
     padding: 5px;
+    margin-top: 5%;
   }
 
   #rsvp .icon {
@@ -679,8 +684,8 @@ screen and (max-width: 1100px) and (max-height: 700px) {
     border: #000000 1px solid;
   }
 
-  .section-content.small, 
-  .section-content.smaller  {
+  .section-content.small,
+  .section-content.smaller {
     height: inherit;
   }
 
@@ -703,7 +708,8 @@ screen and (max-width: 1100px) and (max-height: 700px) {
     all: inherit;
   }
 
-  .sign.small, .sign.smaller {
+  .sign.small,
+  .sign.smaller {
     margin: inherit;
   }
 
@@ -722,7 +728,7 @@ screen and (max-width: 1100px) and (max-height: 700px) {
     margin-top: calc(10px + 1.5vw);
   }
 
-  .section-content.smaller{
+  .section-content.smaller {
     border: none;
     background: none;
   }
@@ -736,7 +742,7 @@ screen and (max-width: 1100px) and (max-height: 700px) {
     font-size: calc(1rem + 0.1vw); /* ~16px */
   }
 
-  #p-desktop{
+  #p-desktop {
     display: none;
   }
 
@@ -748,7 +754,8 @@ screen and (max-width: 1100px) and (max-height: 700px) {
     z-index: 99;
   }
 
-  .spacer.desktop, .spacer.mobile-smaller {
+  .spacer.desktop,
+  .spacer.mobile-smaller {
     display: none;
   }
 
@@ -771,7 +778,9 @@ screen and (max-width: 1100px) and (max-height: 700px) {
   }
 }
 
+/* -- narrow desktop window or small mobile device --*/
 @media screen and (max-width: 700px) {
+
   nav.desktop,
   nav.mobile.large {
     display: none;
@@ -812,15 +821,16 @@ screen and (max-width: 1100px) and (max-height: 700px) {
   .script-letter p {
     text-align: center;
     font-family: 'Biro';
-    font-size: calc(1.5rem + 0.1vw); /* ~24px */
+    font-size: calc(1.5rem + 0.1vw);/* ~24px */
   }
 
   .section-content {
     width: 90%;
   }
-  .spacer.desktop, 
+
+  .spacer.desktop,
   .spacer.mobile-small {
-   display: none;
+    display: none;
   }
 
   .spacer.mobile-smaller {
@@ -829,7 +839,7 @@ screen and (max-width: 1100px) and (max-height: 700px) {
     width: 100vw;
     margin-top: 1vh;
     z-index: 99;
-   }
+  }
 
   img.spacer.mobile-smaller:first-of-type {
     background-color: #f9fafb;
