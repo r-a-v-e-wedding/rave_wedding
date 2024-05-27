@@ -12,8 +12,8 @@ $(document).ready(function(){
   let content = $("#content");
   let section = $("section");
 
-    var campImg = $("#camp.img-large");
-    var driveImg = $("#drive.img-large");
+    var campImg = $(".img-large.camp");
+    var driveImg = $(".img-large.drive");
 
     function hideAll(){
       $("#location-sign").hide();
@@ -91,14 +91,14 @@ $(document).ready(function(){
     
     $(".content-fixed #location img").on( "click", function() {
       console.log(mql.matches)
-      if (content.hasClass("content-fixed") && $(this).is("#camp")) {
+      if (content.hasClass("content-fixed") && $(this).is(".camp")) {
         $(campImg).toggle();
         if ($(campImg).is(":visible")){
           hideAll();
         } else {
           showAll();
         }
-      } else if (content.hasClass("content-fixed") && $(this).is("#drive") ) {
+      } else if (content.hasClass("content-fixed") && $(this).is(".drive") ) {
         $(driveImg).toggle();
         if ($(driveImg).is(":visible")){
           hideAll();
