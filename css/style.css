@@ -737,11 +737,9 @@ screen and (max-width: 1100px) and (max-height: 700px) {
   .mobile-link {
     display: block;
   }
-
-  #cabin-img .image {
-    position: relative;
-    width: 80vmin;
-    border: 1px solid black;
+  
+  #location .section-content img {
+    width: 80%;
   }
 
   h1 {
