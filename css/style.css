@@ -285,7 +285,7 @@ a img[alt*="language"] {
   z-index: 98;
 }
 
-#center {
+.center {
   width: 50vw;
 }
 
@@ -325,7 +325,7 @@ a img[alt*="language"] {
   margin-left: 85px;
 }
 
-#mobile-link {
+.mobile-link {
   display: none;
 }
 
@@ -713,7 +713,7 @@ screen and (max-width: 1100px) and (max-height: 700px) {
     margin: inherit;
   }
 
-  #mobile-link {
+  .mobile-link {
     display: block;
   }
 
