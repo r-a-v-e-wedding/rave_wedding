@@ -23,6 +23,8 @@ $(document).ready(function(){
                   section.attr("class", "section-mobile")
                   $(section).css("display", "block");
                   $(".letter").attr("src", "assets/letter@075x.png")
+                  $("#location .section-content img").css("cursor", "default");
+                  $(".img-large").css("cursor", "default");
       } else {
         content.attr("class", "content-fixed");
         section.attr("class", "section-desktop")
@@ -30,6 +32,8 @@ $(document).ready(function(){
         $("#intro").css("display", "block");
         $("#cabin-img").css("display", "block");
         $(".letter").attr("src", "assets/letter.png")
+        $("#location .section-content img").css("cursor", "zoom-in");
+        $(".img-large").css("cursor", "zoom-out");
       }
     }
 
@@ -45,7 +49,7 @@ $(document).ready(function(){
     });
 
     $( ".popup a" ).on( "click", function() {
-      $(".popup").css('display', 'none');
+      $(".popup").css("display", "none");
     })
 
     $( ".menu" ).on( "click", function() {
@@ -58,5 +62,44 @@ $(document).ready(function(){
         $(section).css("display", "none");
         $("#" + sectionID).css("display", "block");
     } );
+    
+    $( ".content-fixed #location img" ).on( "click", function() {
+      if ( $(this).is("#camp")) {
+        let campImg = $("#camp.img-large");
+        $(campImg).toggle();
+        if ($(campImg).is(":visible")){
+          $("#location-sign").hide();
+          hideAll();
+        } else {
+          $("#location-sign").show();
+          showAll();
+        }
+      } else if ( $(this).is("#drive") ) {
+        let driveImg = $("#drive.img-large");
+        $(driveImg).toggle();
+        if ($(driveImg).is(":visible")){
+          $("#location-sign").hide();
+          hideAll();
+        } else {
+          $("#location-sign").show();
+          showAll();
+        }
+
+        function hideAll(){
+          $(".sign-legs").hide();
+          $("#location").css("background", "#FFFFFF");
+          $(".spacer.desktop").hide();
+        }
+
+        function showAll(){
+          $(".sign-legs").show();
+          $("#location").css("background", "#B8E4CB");
+          $(".spacer.desktop").show();
+        }
+    } else {
+      alert("bleep");
+    }
+    });
+
 });
 

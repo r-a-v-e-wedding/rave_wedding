@@ -313,11 +313,6 @@ a img[alt*="language"] {
   margin-left: 70px;
 }
 
-/* #form img{
-  -webkit-transform: scaleX(-1);
-  transform: scaleX(-1);
-} */
-
 #form #sign-link {
   position: absolute;
   font-size: 18px;
@@ -396,6 +391,27 @@ h2 {
 .section-content img {
   width: 80%;
   border: 1px #000000 solid;
+}
+
+ #location .section-content img {
+  width: 50%;
+}
+
+/** FIX IMAGE IN MOBILE VIEW **/
+.img-large{
+  display: none;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  top: 1%;
+  height: 98%;
+  width: auto;
+  border: 1px #000000 solid;
+  z-index: 100;
+}
+
+#drive{
+  height: 98%;
 }
 
 .spacer.desktop {
