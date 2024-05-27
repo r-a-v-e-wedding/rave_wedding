@@ -297,31 +297,31 @@ a img[alt*="language"] {
   display: block;
 }
 
-#cabins #sign-link {
+#cabins .link.sign-en {
   position: absolute;
   font-size: 18px;
   margin-top: 30px;
   margin-left: 70px;
 }
 
-#cabins #sign-link-fr {
-  position: absolute;
-  font-size: 18px;
-  margin-top: 20px;
-  margin-left: 50px;
-}
-
-#form #sign-link {
+#form .link.sign-en {
   position: absolute;
   font-size: 18px;
   margin-top: 30px;
   margin-left: 90px;
 }
 
-#form #sign-link-fr {
+#cabins .link.sign-fr {
   position: absolute;
   font-size: 18px;
   margin-top: 20px;
+  margin-left: 50px;
+}
+
+#form .link.sign-fr {
+  position: absolute;
+  font-size: 18px;
+  margin-top: 40px;
   margin-left: 85px;
 }
 
@@ -694,7 +694,6 @@ screen and (max-width: 1100px) and (max-height: 700px) {
   }
 
   .sign {
-    width: 100vw;
     display: none;
     all: inherit;
   }
