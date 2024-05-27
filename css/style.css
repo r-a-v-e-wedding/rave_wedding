@@ -815,6 +815,10 @@ screen and (max-width: 1100px) and (max-height: 700px) {
     font-size: calc(1.5rem + 0.1vw); /* ~24px */
   }
 
+  .section-content {
+    width: 90%;
+  }
+
   .spacer.desktop, 
   .spacer.mobile-small {
    display: none;
