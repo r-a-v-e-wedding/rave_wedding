@@ -479,7 +479,7 @@ section#location p:first-child {
   background: none;
   padding: 0;
   border: none;
-  mix-blend-mode: none;
+  mix-blend-mode: normal;
   font-style: italic;
 }
 
