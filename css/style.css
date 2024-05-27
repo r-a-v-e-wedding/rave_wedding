@@ -440,12 +440,28 @@ section#location p:first-child {
   text-align: center;
 }
 
-.letter {
-  margin-top: 2vh;
-  filter: drop-shadow(-5px 3px 7px #16151350);
-  z-index: 96;
+.full-letter{
+  position: relative;
+  text-align: center;
+  transform: rotate(-1deg);
 }
 
+.full-letter p{
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -60%);
+
+  font-family: 'Biro';
+  font-size: calc(0.2rem + 2vh); /* ~16px */
+}
+
+.full-letter img:last-child{
+  height: 75vmin;
+  z-index: 98;
+}
+
+.letter,
 .script-letter {
   display: none;
 }
@@ -689,8 +705,14 @@ screen and (max-width: 1100px) and (max-height: 700px) {
     height: inherit;
   }
 
-  .letter {
+  .full-letter,
+  .script-letter{
+    display:none;
+  }
+
+  .letter{
     margin-top: 2vh;
+    display:inline;
   }
 
   .sign {
@@ -809,12 +831,18 @@ screen and (max-width: 1100px) and (max-height: 700px) {
     height: 100%;
   }
 
+  .full-letter,
   .letter {
-    display: none;
+    display:none;
   }
 
   .script-letter {
     display: block;
+  }
+
+  .script-letter img{
+    margin-top: 50px;
+    width: 45vw;
   }
 
   .script-letter p {
