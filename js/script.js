@@ -9,6 +9,9 @@ $(document).ready(function () {
     }
   };
 
+  var isSafari = window.safari !== undefined;
+  if (isSafari) alert("(EN) For a better experience, please use Firefox or Chrome. ---------- (FR) Pour une meilleure expérience, utilisez Firefox ou Chrome.")
+
   let content = $("#content");
   let section = $("section");
 
