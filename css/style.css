@@ -441,7 +441,6 @@ section#location p:first-child {
 }
 
 .full-letter{
-  top: 10%;
   position: relative;
   display: flex;
   align-content: center;
