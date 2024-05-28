@@ -461,7 +461,6 @@ section#location p:first-child {
   z-index: 99;
 
   -ms-overflow-style: none;
-  overflow: -moz-scrollbars-none;
   scrollbar-width: none;
   scrollbar-color: #F8F9FA #ffffff;
 }
