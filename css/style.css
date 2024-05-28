@@ -441,6 +441,7 @@ section#location p:first-child {
 }
 
 .full-letter{
+  top: 10%;
   position: relative;
   display: flex;
   align-content: center;
@@ -488,7 +489,7 @@ section#location p:first-child {
   background: none;
   padding: 0;
   border: none;
-  mix-blend-mode: none;
+  mix-blend-mode: normal;
   font-style: italic;
 }
 
