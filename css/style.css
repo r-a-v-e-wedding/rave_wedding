@@ -442,7 +442,9 @@ section#location p:first-child {
 
 .full-letter{
   position: relative;
-  text-align: center;
+  display: flex;
+  align-content: center;
+  justify-content: center;
   transform: rotate(-1deg);
 }
 
@@ -451,9 +453,17 @@ section#location p:first-child {
   top: 60%;
   left: 50%;
   transform: translate(-50%, -60%);
-
+  height: 70%;
+  
   font-family: 'Biro';
   font-size: calc(0.2rem + 2vh); /* ~16px */
+  overflow-y: scroll;
+  z-index: 99;
+
+  -ms-overflow-style: none;
+  overflow: -moz-scrollbars-none;
+  scrollbar-width: none;
+  scrollbar-color: #F8F9FA #ffffff;
 }
 
 .full-letter img{
