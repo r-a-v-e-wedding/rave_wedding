@@ -129,10 +129,16 @@ nav.desktop {
   display: -webkit-flex;
   display: flex;
 
-  box-align: center;
+  /* box-pack: center; */
   -webkit-justify-content: center;
+  -moz-justify-content: center;
+  -ms-justify-content: center;
   justify-content: center;
+
+  /* box-align: center; */
   -webkit-align-content: center;
+  -moz-align-content: center;
+  -ms-align-content: center;
   align-content: center;
 
   position: absolute;
@@ -143,10 +149,16 @@ nav.desktop {
 }
 
 #loading p {
-  box-align: center;
+  /* box-pack: center; */
   -webkit-justify-self: center;
+  -moz-justify-self: center;
+  -ms-justify-self: center;
   justify-self: center;
+
+  /* box-align: center; */
   -webkit-align-content: center;
+  -moz-align-content: center;
+  -ms-align-content: center;
   align-content: center;
 }
 
@@ -169,6 +181,9 @@ nav.desktop {
 }
 
 .row>* {
+  -webkit-flex: 1 100%;
+	-moz-flex: 1 100%;
+	-ms-flex: 1 100%;
   flex: 1 100%;
 }
 
@@ -185,8 +200,13 @@ nav.desktop {
 
 a img {
   -webkit-justify-content: center;
+  -moz-justify-content: center;
+  -ms-justify-content: center;
   justify-content: center;
+
   -webkit-align-self: center;
+  -moz-align-self: center;
+  -ms-align-self: center;
   align-self: center;
   height: calc(40px + 2vh);
 }
@@ -270,6 +290,8 @@ a img[alt*="language"] {
   display: flex;
 
   -webkit-justify-content: center;
+  -moz-justify-content: center;
+  -ms-justify-content: center;
   justify-content: center;
 
   position: absolute;
@@ -431,6 +453,8 @@ h2 {
   border: #000000 1px solid;
   overflow-y: scroll;
 
+  -webkit-overflow-style: none;
+  -moz-overflow-style: none;
   -ms-overflow-style: none;
   overflow: -moz-scrollbars-none;
   scrollbar-width: none;
@@ -484,8 +508,13 @@ section#intro {
   display: flex;
 
   -webkit-align-content: center;
+  -moz-align-content: center;
+  -ms-align-content: center;
   align-content: center;
+
   -webkit-justify-content: center;
+  -moz-justify-content: center;
+  -ms-justify-content: center;
   justify-content: center;
 
   position: relative;
@@ -505,9 +534,15 @@ section#location p:first-child {
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
+
   -webkit-align-content: center;
+  -moz-align-content: center;
+  -ms-align-content: center;
   align-content: center;
+  
   -webkit-justify-content: center;
+  -moz-justify-content: center;
+  -ms-justify-content: center;
   justify-content: center;
 
   position: relative;
@@ -527,7 +562,10 @@ section#location p:first-child {
   overflow-y: scroll;
   z-index: 99;
 
+  -webkit-overflow-style: none;
+  -moz-overflow-style: none;
   -ms-overflow-style: none;
+  overflow: -moz-scrollbars-none;
   scrollbar-width: none;
   scrollbar-color: #F8F9FA #ffffff;
 }
@@ -596,6 +634,8 @@ section#location p:first-child {
   display: flex;
 
   -webkit-justify-content: center;
+  -moz-justify-content: center;
+  -ms-justify-content: center;
   justify-content: center;
 }
 
@@ -702,12 +742,12 @@ screen and (max-width: 1100px) and (max-height: 700px) {
   }
 
   nav.mobile {
-    top: 0;
     position: -webkit-sticky;
     position: -moz-sticky;
     position: -ms-sticky;
     position: -o-sticky;
     position: sticky;
+    top: 0;
   }
 
   nav.mobile.large {
@@ -718,7 +758,9 @@ screen and (max-width: 1100px) and (max-height: 700px) {
     display: flex;
 
     -webkit-flex-flow: row wrap;
-    flex-flow: row wrap;
+	  -moz-flex-flow: row wrap;
+	  -ms-flex-flow: row wrap;
+	  flex-flow: row wrap;
 
     top: 0;
     padding: 0;
@@ -732,7 +774,9 @@ screen and (max-width: 1100px) and (max-height: 700px) {
 
   .row {
     -webkit-flex-direction: row;
-    flex-direction: row;
+	  -moz-flex-direction: row;
+	  -ms-flex-direction: row;
+	  flex-direction: row;
 
     width: 100vw;
   }
@@ -908,14 +952,18 @@ screen and (max-width: 1100px) and (max-height: 700px) {
     display: -ms-flexbox;
     display: -webkit-flex;
     display: flex;
+
     -webkit-flex-flow: row wrap;
-    flex-flow: row wrap;
+	  -moz-flex-flow: row wrap;
+	  -ms-flex-flow: row wrap;
+	  flex-flow: row wrap;
 
     position: -webkit-sticky;
     position: -moz-sticky;
     position: -ms-sticky;
     position: -o-sticky;
     position: sticky;
+
     top: 0;
     left: 0;
 
