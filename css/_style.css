@@ -180,24 +180,6 @@ nav.desktop {
   width: 175px;
 }
 
-.crashing.row {
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-
-  -webkit-box-orient: vertical;
-  -moz-box-orient: vertical;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-
-  position: relative;
-  top: 0;
-  width: 175px;
-}
-
 .row>* {
   -webkit-flex: 1 100%;
 	-moz-flex: 1 100%;
@@ -593,13 +575,6 @@ section#location p:first-child {
   z-index: 98;
 }
 
-.crashing .full-letter p {
-  top: 50%;
-  left: 50%;
-  height: 90%;
-  transform: translate(-50%, -50%);
-}
-
 .letter,
 .script-letter {
   display: none;
@@ -720,13 +695,6 @@ th:nth-child(2) {
 
 #intro {
   background-image: url('../assets/bg-intro.jpg');
-  background-color: #C4C4E7;
-  background-size: cover;
-}
-
-.crashing #intro{
-  background-image: none;
-  background-color: #C4C4E7;
   background-size: cover;
 }
 
@@ -968,12 +936,6 @@ screen and (max-width: 1100px) and (max-height: 700px) {
     background-image: url('../assets/bg-intro.jpg');
     background-size: cover;
   }
-
-  .crashing #intro{
-    background-image: none;
-    background-color: #C4C4E7;
-    background-size: cover;
-  }
 }
 
 /* -- narrow desktop window or small mobile device --*/
@@ -1015,12 +977,6 @@ screen and (max-width: 1100px) and (max-height: 700px) {
 
   #intro {
     background-image: url('../assets/letter-bg.jpg');
-    background-size: cover;
-    height: 100%;
-  }
-
-  .crashing #intro{
-    background-image: url('../assets/paper-crash.png');
     background-size: cover;
     height: 100%;
   }
