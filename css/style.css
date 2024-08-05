@@ -292,6 +292,10 @@ a img[alt*="language"] {
   border: 1px #000000 solid;
 }
 
+.sign.medium {
+  padding: 0 0 calc(25px + 2.5vw) 0;
+}
+
 .sign.small {
   padding: 0 0 15px 0;
 }
@@ -447,6 +451,12 @@ section {
   border: none;
 }
 
+.section-content.medium {
+  height: 45vh;
+  padding-bottom: 1%;
+  overflow: visible;
+}
+
 .section-content.small,
 .section-content.smaller {
   height: auto;
@@ -596,7 +606,7 @@ section#location p:first-child {
 .crashing .full-letter p {
   top: 50%;
   left: 50%;
-  height: 90%;
+  height: 80%;
   transform: translate(-50%, -50%);
 }
 
@@ -840,13 +850,17 @@ screen and (max-width: 1100px) and (max-height: 700px) {
     border: none;
   }
 
-  a img,
-  a img[alt*="RSVP"],
-  a img[alt*="language"] {
+  a img {
     position: relative;
     height: 5vw;
   }
 
+  a img[alt*="RSVP"],
+  a img[alt*="language"] {
+    position: relative;
+    height: 4vw;
+  }
+  
   .icon {
     position: relative;
     width: calc(125px + 15vw);
@@ -870,6 +884,7 @@ screen and (max-width: 1100px) and (max-height: 700px) {
     border: #000000 1px solid;
   }
 
+  .section-content.medium,
   .section-content.small,
   .section-content.smaller {
     height: inherit;
@@ -899,6 +914,7 @@ screen and (max-width: 1100px) and (max-height: 700px) {
     all: inherit;
   }
 
+  .sign.medium,
   .sign.small,
   .sign.smaller {
     margin: inherit;
@@ -978,6 +994,10 @@ screen and (max-width: 1100px) and (max-height: 700px) {
 
 /* -- narrow desktop window or small mobile device --*/
 @media screen and (max-width: 700px) {
+  html {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
 
   nav.desktop,
   nav.mobile.large {
