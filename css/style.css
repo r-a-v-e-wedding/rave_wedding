@@ -614,11 +614,7 @@ section#location p:first-child {
 .crashing .full-letter p {
   top: 50%;
   left: 50%;
-<<<<<<< HEAD
-  height: 90%;
-=======
   height: 80%;
->>>>>>> 9c4691b74816c38efd2a1ff62df3a3be3a22ead5
   transform: translate(-50%, -50%);
 }
 
