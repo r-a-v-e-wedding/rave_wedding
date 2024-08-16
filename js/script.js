@@ -1,13 +1,7 @@
 $(document).ready(function () {
-  document.onreadystatechange = function () {
-    if (document.readyState !== "complete") {
-      document.querySelector("body").style.visibility = "hidden";
-      document.querySelector("#loading").style.visibility = "visible";
-    } else {
-      document.querySelector("#loading").style.display = "none";
-      document.querySelector("body").style.visibility = "visible";
-    }
-  };
+  $(window).on('load', function () {
+    $('#loading').hide();
+  }) 
 
   var isSafari = window.safari !== undefined;
   if (isSafari) alert("(EN) For a better experience, please use Firefox or Chrome. ---------- (FR) Pour une meilleure expérience, utilisez Firefox ou Chrome.")
